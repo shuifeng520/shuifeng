@@ -17,23 +17,23 @@ HEIGHT = 1080
 FONT_PATH = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
 
 COLORS = {
-    "bg": "#eef3f8",
+    "bg": "#edf3fb",
     "surface": "#ffffff",
-    "panel": "#f9fbfe",
-    "line": "#d8e5f4",
+    "panel": "#f6fafe",
+    "line": "#cfdeef",
     "blue": "#2b7bd8",
     "blue_dark": "#155fb4",
     "blue_soft": "#eef6ff",
     "text": "#10203b",
-    "muted": "#5e6f88",
-    "subtle": "#7b8aa0",
+    "muted": "#4f6382",
+    "subtle": "#6f829d",
     "green": "#e9fbf2",
     "green_line": "#9ce3bf",
     "green_text": "#137a4c",
     "orange": "#fff4e8",
     "orange_line": "#ffd0a3",
     "orange_text": "#c15b18",
-    "field": "#f1f5f9",
+    "field": "#edf3fa",
     "white": "#ffffff",
 }
 
@@ -64,7 +64,7 @@ class Canvas:
             'fill="none" xmlns="http://www.w3.org/2000/svg">',
             "<defs>",
             '<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">',
-            '<feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#15345b" flood-opacity="0.10"/>',
+            '<feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#15345b" flood-opacity="0.12"/>',
             "</filter>",
             "</defs>",
             f'<rect width="{WIDTH}" height="{HEIGHT}" fill="{COLORS["bg"]}"/>',
@@ -83,8 +83,8 @@ class Canvas:
             shadow_layer = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
             shadow_draw = ImageDraw.Draw(shadow_layer)
             x1, y1, x2, y2 = xy
-            shadow_draw.rounded_rectangle((x1, y1 + 14, x2, y2 + 14), radius=radius, fill=(22, 52, 91, 24))
-            self.image.alpha_composite(shadow_layer.filter(ImageFilter.GaussianBlur(18)))
+            shadow_draw.rounded_rectangle((x1, y1 + 10, x2, y2 + 10), radius=radius, fill=(22, 52, 91, 30))
+            self.image.alpha_composite(shadow_layer.filter(ImageFilter.GaussianBlur(14)))
         self.draw.rounded_rectangle(xy, radius=radius, fill=fill, outline=outline, width=width)
         attrs = [
             f'x="{xy[0]}"',
@@ -163,16 +163,21 @@ def header(c: Canvas, mode: str) -> None:
 
 def chip(c: Canvas, x: int, y: int, label: str, w: int | None = None, active: bool = False) -> int:
     w = w or max(118, len(label) * 24 + 42)
-    c.rounded((x, y, x + w, y + 42), 21, COLORS["blue_soft"] if active else COLORS["field"], COLORS["line"])
-    c.text((x + w // 2, y + 21), label, 18, COLORS["blue_dark"] if active else COLORS["muted"], "mm")
+    c.rounded(
+        (x, y, x + w, y + 42),
+        21,
+        "#e7f1ff" if active else "#f2f6fb",
+        "#b7d5fb" if active else COLORS["line"],
+    )
+    c.text((x + w // 2, y + 21), label, 18, COLORS["blue_dark"] if active else COLORS["subtle"], "mm")
     return x + w + 14
 
 
 def action_chip(c: Canvas, x: int, y: int, label: str, icon: str, w: int = 132) -> int:
-    c.rounded((x, y, x + w, y + 38), 19, "#f7fbff", "#e1ebf5")
-    c.circle(x + 22, y + 19, 12, COLORS["blue_soft"], "#cfe0f2")
+    c.rounded((x, y, x + w, y + 38), 19, "#f9fcff", "#dbe8f6")
+    c.circle(x + 22, y + 19, 12, "#eaf3ff", "#c7daef")
     c.text((x + 22, y + 19), icon, 13, COLORS["blue_dark"], "mm")
-    c.text((x + 44, y + 19), label, 17, COLORS["muted"], "lm")
+    c.text((x + 44, y + 19), label, 17, COLORS["subtle"], "lm")
     return x + w + 12
 
 
@@ -184,14 +189,14 @@ def icon_button(c: Canvas, x: int, y: int, label: str) -> None:
 def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str = "审计问答") -> None:
     header(c, mode)
     # Three independent panels keep the chat workspace visually calmer than a nested container.
-    c.rounded((70, 148, 390, 1016), 28, COLORS["surface"], "#dce8f5", shadow=True)
-    c.rounded((420, 148, 1380, 1016), 28, COLORS["surface"], "#dce8f5", shadow=True)
-    c.rounded((1410, 148, 1910, 1016), 28, COLORS["surface"], "#dce8f5", shadow=True)
+    c.rounded((70, 148, 390, 1016), 28, COLORS["surface"], "#d7e5f5", shadow=True)
+    c.rounded((420, 148, 1380, 1016), 28, COLORS["surface"], "#d7e5f5", shadow=True)
+    c.rounded((1410, 148, 1910, 1016), 28, "#f7fbff", "#d7e5f5", shadow=True)
 
     # Left conversation list.
     c.text((102, 204), "会话", 28, COLORS["text"])
     c.text((102, 236), "按任务自动归档", 17, COLORS["subtle"])
-    c.rounded((102, 266, 358, 314), 16, "#f7fbff", "#e4edf7")
+    c.rounded((102, 266, 358, 314), 16, "#f8fbff", "#dfe9f6")
     c.text((128, 290), "搜索审计问题 / 资料", 18, COLORS["subtle"], "lm")
     conversations = [
         ("当前", "电梯维护费超标审计", "刚刚 · 15 条疑点"),
@@ -202,7 +207,13 @@ def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str 
     y = 352
     for tag, name, meta in conversations:
         selected = tag == "当前"
-        c.rounded((100, y, 360, y + 96), 20, COLORS["blue_soft"] if selected else "#fbfdff", "#8fc1ff" if selected else "#e4edf7", 2 if selected else 1)
+        c.rounded(
+            (100, y, 360, y + 96),
+            20,
+            "#e9f3ff" if selected else "#fcfdff",
+            "#78b0f7" if selected else "#e1ebf6",
+            2 if selected else 1,
+        )
         c.circle(132, y + 34, 17, COLORS["blue"] if selected else "#dbeafe")
         c.text((132, y + 34), tag[:1], 14, COLORS["white"] if selected else COLORS["muted"], "mm")
         c.text((162, y + 28), name, 19, COLORS["text"], max_width=170)
@@ -225,25 +236,25 @@ def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str 
 def assistant_bubble(c: Canvas, y: int, lines: list[str], title: str = "审计智能体", h: int = 120) -> None:
     c.circle(462, y + 36, 24, COLORS["blue"])
     c.text((462, y + 36), "AI", 15, COLORS["white"], "mm")
-    c.rounded((506, y, 1256, y + h), 22, COLORS["panel"], "#e2ebf5")
+    c.rounded((506, y, 1256, y + h), 22, COLORS["panel"], "#dce8f6")
     c.text((540, y + 34), title, 20, COLORS["text"])
     c.multiline(540, y + 70, lines, 20, COLORS["muted"], 30)
 
 
 def user_bubble(c: Canvas, y: int, lines: list[str], h: int = 92) -> None:
-    c.rounded((724, y, 1328, y + h), 22, COLORS["blue_dark"])
+    c.rounded((724, y, 1328, y + h), 22, "#1f66c6")
     c.multiline(756, y + 32, lines, 20, COLORS["white"], 30)
     c.circle(1354, y + 36, 24, COLORS["field"], COLORS["line"])
     c.text((1354, y + 36), "我", 16, COLORS["muted"], "mm")
 
 
 def input_box(c: Canvas, placeholder: str = "输入审计问题，或拖拽政策、Excel、CSV 到这里...") -> None:
-    c.rounded((462, 834, 1340, 992), 26, COLORS["surface"], "#cfe0f2", shadow=True)
+    c.rounded((462, 834, 1340, 992), 26, COLORS["surface"], "#c8dbf0", shadow=True)
     c.text((498, 878), placeholder, 22, COLORS["subtle"], max_width=690)
     c.circle(1288, 878, 30, COLORS["blue"])
     c.text((1288, 878), "↑", 28, COLORS["white"], "mm")
     c.line((498, 914, 1302, 914), COLORS["line"], 1)
-    c.rounded((486, 928, 1232, 974), 18, "#fbfdff", "#edf3f9")
+    c.rounded((486, 928, 1232, 974), 18, "#f8fbff", "#e7eff8")
     c.text((510, 951), "快捷操作", 17, COLORS["subtle"], "lm")
     x = 612
     actions = [("上传资料", "文"), ("连接数据", "数"), ("生成 SQL", "S"), ("导出报告", "报")]
@@ -252,7 +263,7 @@ def input_box(c: Canvas, placeholder: str = "输入审计问题，或拖拽政�
 
 
 def side_stat(c: Canvas, y: int, title: str, value: str, desc: str, color: str = COLORS["blue_soft"]) -> None:
-    c.rounded((1444, y, 1876, y + 104), 20, color, COLORS["line"])
+    c.rounded((1444, y, 1876, y + 104), 20, color, "#d3e3f4")
     c.text((1476, y + 36), title, 22, COLORS["text"])
     c.text((1476, y + 72), value, 20, COLORS["blue_dark"] if color == COLORS["blue_soft"] else COLORS["green_text"])
     c.text((1652, y + 72), desc, 17, COLORS["subtle"], max_width=190)
@@ -346,7 +357,7 @@ def method_workflow() -> None:
         ["已生成 SQL 并执行完成，命中 15 条疑点。", "下方是关键 SQL，可继续要求我解释、优化或导出报告。"],
         h=136,
     )
-    c.rounded((506, 672, 1256, 830), 22, "#f8fbff", "#cfe0f2")
+    c.rounded((506, 672, 1256, 832), 22, "#f8fbff", "#cfe0f2")
     c.text((540, 706), "SQL 片段", 23, COLORS["text"])
     c.text((540, 734), "可隐藏/显示代码，隐藏后仅保留执行摘要。", 17, COLORS["subtle"], max_width=360)
     c.rounded((860, 694, 984, 736), 21, COLORS["green"], COLORS["green_line"])
@@ -355,25 +366,25 @@ def method_workflow() -> None:
     c.text((1059, 715), "隐藏代码", 17, COLORS["blue_dark"], "mm")
     c.rounded((1134, 694, 1224, 736), 21, COLORS["surface"], COLORS["line"])
     c.text((1179, 715), "复制 SQL", 17, COLORS["muted"], "mm")
-    c.rounded((540, 748, 1224, 820), 16, "#0f172a", "#23314a")
-    c.rounded((540, 748, 1224, 776), 16, "#16233a", "#23314a")
-    c.line((540, 776, 1224, 776), "#243650", 1)
+    c.rounded((540, 748, 1224, 826), 16, "#0f172a", "#23314a")
+    c.rounded((540, 748, 1224, 780), 16, "#16233a", "#23314a")
+    c.line((540, 780, 1224, 780), "#243650", 1)
     c.text((562, 765), "SQL Query", 14, "#9ec5ff")
-    c.rounded((1126, 754, 1212, 772), 9, "#1f2d45", "#334765")
-    c.text((1169, 763), "MYSQL", 12, "#9fb6d4", "mm")
-    c.rounded((548, 780, 586, 814), 10, "#111b2d")
-    sql_y = [792, 805, 818]
+    c.rounded((1126, 756, 1212, 774), 9, "#1f2d45", "#334765")
+    c.text((1169, 765), "MYSQL", 12, "#9fb6d4", "mm")
+    c.rounded((548, 784, 586, 822), 10, "#111b2d")
+    sql_y = [789, 799, 809]
     for idx, y in enumerate(sql_y):
-        c.text((566, y), str(idx + 1), 13, "#7f97b9", "mm")
-    c.text((596, 792), "SELECT", 15, "#7dd3fc")
-    c.text((664, 792), "项目名称, 支付摘要, 支付金额", 15, "#dce9ff", max_width=538)
-    c.text((596, 805), "FROM", 15, "#7dd3fc")
-    c.text((648, 805), "年度支付明细表", 15, "#dce9ff", max_width=554)
-    c.text((596, 818), "WHERE", 15, "#7dd3fc")
-    c.text((664, 818), "支付摘要 LIKE", 15, "#dce9ff")
-    c.text((784, 818), "'%电梯维护%'", 15, "#facc15")
-    c.text((904, 818), "AND 单价 >", 15, "#dce9ff")
-    c.text((1002, 818), "8800;", 15, "#86efac")
+        c.text((566, y), str(idx + 1), 12, "#7f97b9", "mm")
+    c.text((596, 789), "SELECT", 13, "#7dd3fc")
+    c.text((654, 789), "项目名称, 支付摘要, 支付金额", 13, "#dce9ff", max_width=548)
+    c.text((596, 799), "FROM", 13, "#7dd3fc")
+    c.text((642, 799), "年度支付明细表", 13, "#dce9ff", max_width=564)
+    c.text((596, 809), "WHERE", 13, "#7dd3fc")
+    c.text((654, 809), "支付摘要 LIKE", 13, "#dce9ff")
+    c.text((758, 809), "'%电梯维护%'", 13, "#facc15")
+    c.text((862, 809), "AND 单价 >", 13, "#dce9ff")
+    c.text((944, 809), "8800;", 13, "#86efac")
     input_box(c, "继续追问：解释命中原因，导出 Excel，并打包审计报告...")
 
     side_stat(c, 316, "执行状态", "已完成", "耗时 1.8s", COLORS["green"])
