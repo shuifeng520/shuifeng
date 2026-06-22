@@ -68,16 +68,13 @@
 <rect x="506" y="528" width="750" height="100" rx="22" fill="#f9fbfe" stroke="#e2ebf5" stroke-width="1"/>
 <text x="540" y="562" fill="#10203b" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">审计智能体</text>
 <text x="540" y="598" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 已生成并执行完成，命中 15 条疑点。</text>
-<rect x="506" y="660" width="750" height="132" rx="22" fill="#f8fbff" stroke="#cfe0f2" stroke-width="1"/>
-<text x="540" y="694" fill="#10203b" font-size="23" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 片段</text>
-<rect x="862" y="682" width="108" height="42" rx="21" fill="#fff4e8" stroke="#ffd0a3" stroke-width="1"/>
-<text x="916" y="703" fill="#c15b18" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">已隐藏</text>
-<rect x="986" y="682" width="124" height="42" rx="21" fill="#eef6ff" stroke="#b9d8ff" stroke-width="1"/>
-<text x="1048" y="703" fill="#155fb4" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">显示代码</text>
-<rect x="1126" y="682" width="98" height="42" rx="21" fill="#ffffff" stroke="#d8e5f4" stroke-width="1"/>
-<text x="1175" y="703" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">复制 SQL</text>
-<rect x="540" y="738" width="684" height="36" rx="16" fill="#f3f7fb" stroke="#dce8f5" stroke-width="1"/>
-<text x="566" y="756" fill="#5e6f88" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">已隐藏 SQL 代码，仅保留执行摘要；点击“显示代码”展开查看完整语句。</text>
+<rect x="506" y="656" width="750" height="98" rx="22" fill="#f8fbff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="540" y="692" fill="#10203b" font-size="23" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 已生成（默认隐藏）</text>
+<text x="540" y="726" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">命中 15 条疑点，点击右侧按钮可展开查看完整 SQL。</text>
+<rect x="996" y="684" width="122" height="44" rx="22" fill="#eef6ff" stroke="#b9d8ff" stroke-width="1"/>
+<text x="1057" y="706" fill="#155fb4" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">显示代码</text>
+<rect x="1134" y="684" width="90" height="44" rx="22" fill="#ffffff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1179" y="706" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">复制 SQL</text>
 <rect x="462" y="834" width="878" height="158" rx="26" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
 <text x="498" y="878" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">继续追问：解释命中原因，导出 Excel，并打包审计报告...</text>
 <circle cx="1288" cy="878" r="30" fill="#2b7bd8"/>
