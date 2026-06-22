@@ -175,74 +175,76 @@ def icon_button(c: Canvas, x: int, y: int, label: str) -> None:
 
 def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str = "审计问答") -> None:
     header(c, mode)
-    c.rounded((70, 144, 1910, 1016), 30, COLORS["surface"], COLORS["line"], shadow=True)
+    # Three independent panels keep the chat workspace visually calmer than a nested container.
+    c.rounded((70, 148, 390, 1016), 28, COLORS["surface"], "#dce8f5", shadow=True)
+    c.rounded((420, 148, 1380, 1016), 28, COLORS["surface"], "#dce8f5", shadow=True)
+    c.rounded((1410, 148, 1910, 1016), 28, COLORS["surface"], "#dce8f5", shadow=True)
 
     # Left conversation list.
-    c.rounded((92, 166, 392, 994), 24, "#f7fbff", "#e5eef8")
-    c.text((122, 212), "会话", 26, COLORS["text"])
-    c.rounded((122, 236, 362, 282), 16, COLORS["surface"], COLORS["line"])
-    c.text((146, 259), "搜索审计问题 / 资料", 18, COLORS["subtle"], "lm")
+    c.text((102, 204), "会话", 28, COLORS["text"])
+    c.text((102, 236), "按任务自动归档", 17, COLORS["subtle"])
+    c.rounded((102, 266, 358, 314), 16, "#f7fbff", "#e4edf7")
+    c.text((128, 290), "搜索审计问题 / 资料", 18, COLORS["subtle"], "lm")
     conversations = [
         ("当前", "电梯维护费超标审计", "刚刚 · 15 条疑点"),
         ("资料", "政策法规抽取", "6 条关注点"),
         ("数据", "dataset01 接入", "7 张表已识别"),
         ("方法", "SQL 方法归档", "已保存 12 条"),
     ]
-    y = 312
+    y = 352
     for tag, name, meta in conversations:
         selected = tag == "当前"
-        c.rounded((116, y, 368, y + 88), 18, COLORS["blue_soft"] if selected else COLORS["surface"], "#8fc1ff" if selected else "#e4edf7", 2 if selected else 1)
-        c.circle(146, y + 30, 16, COLORS["blue"] if selected else "#dbeafe")
-        c.text((146, y + 30), tag[:1], 14, COLORS["white"] if selected else COLORS["muted"], "mm")
-        c.text((172, y + 24), name, 19, COLORS["text"], max_width=170)
-        c.text((172, y + 56), meta, 16, COLORS["subtle"], max_width=170)
-        y += 104
+        c.rounded((100, y, 360, y + 96), 20, COLORS["blue_soft"] if selected else "#fbfdff", "#8fc1ff" if selected else "#e4edf7", 2 if selected else 1)
+        c.circle(132, y + 34, 17, COLORS["blue"] if selected else "#dbeafe")
+        c.text((132, y + 34), tag[:1], 14, COLORS["white"] if selected else COLORS["muted"], "mm")
+        c.text((162, y + 28), name, 19, COLORS["text"], max_width=170)
+        c.text((162, y + 62), meta, 16, COLORS["subtle"], max_width=170)
+        y += 112
 
     # Main chat area.
-    c.text((430, 206), title, 34, COLORS["text"])
-    c.text((430, 248), subtitle, 22, COLORS["muted"])
-    x = 430
+    c.text((462, 206), title, 34, COLORS["text"])
+    c.text((462, 250), subtitle, 22, COLORS["muted"], max_width=840)
+    x = 462
     for tab in ["审计问答", "资料", "数据", "方法", "结果"]:
-        x = chip(c, x, 286, tab, active=tab == active_tab)
-    c.line((430, 354, 1370, 354), "#e5edf7", 2)
+        x = chip(c, x, 300, tab, active=tab == active_tab)
+    c.line((462, 368, 1340, 368), "#e5edf7", 2)
 
     # Right context panel.
-    c.rounded((1410, 166, 1888, 994), 24, "#f7fbff", "#e5eef8")
-    c.text((1442, 214), "上下文面板", 26, COLORS["text"])
-    c.text((1442, 248), "对话过程中的资料、数据和结果实时沉淀。", 18, COLORS["subtle"], max_width=390)
+    c.text((1444, 204), "上下文面板", 28, COLORS["text"])
+    c.text((1444, 238), "资料、数据、方法和结果实时沉淀。", 18, COLORS["subtle"], max_width=390)
 
 
 def assistant_bubble(c: Canvas, y: int, lines: list[str], title: str = "审计智能体", h: int = 120) -> None:
-    c.circle(452, y + 34, 24, COLORS["blue"])
-    c.text((452, y + 34), "AI", 15, COLORS["white"], "mm")
-    c.rounded((492, y, 1260, y + h), 22, COLORS["panel"], "#e2ebf5")
-    c.text((526, y + 34), title, 20, COLORS["text"])
-    c.multiline(526, y + 68, lines, 20, COLORS["muted"], 30)
+    c.circle(462, y + 36, 24, COLORS["blue"])
+    c.text((462, y + 36), "AI", 15, COLORS["white"], "mm")
+    c.rounded((506, y, 1256, y + h), 22, COLORS["panel"], "#e2ebf5")
+    c.text((540, y + 34), title, 20, COLORS["text"])
+    c.multiline(540, y + 70, lines, 20, COLORS["muted"], 30)
 
 
 def user_bubble(c: Canvas, y: int, lines: list[str], h: int = 92) -> None:
-    c.rounded((712, y, 1336, y + h), 22, COLORS["blue_dark"])
-    c.multiline(744, y + 32, lines, 20, COLORS["white"], 30)
-    c.circle(1364, y + 34, 24, COLORS["field"], COLORS["line"])
-    c.text((1364, y + 34), "我", 16, COLORS["muted"], "mm")
+    c.rounded((724, y, 1328, y + h), 22, COLORS["blue_dark"])
+    c.multiline(756, y + 32, lines, 20, COLORS["white"], 30)
+    c.circle(1354, y + 36, 24, COLORS["field"], COLORS["line"])
+    c.text((1354, y + 36), "我", 16, COLORS["muted"], "mm")
 
 
 def input_box(c: Canvas, placeholder: str = "输入审计问题，或拖拽政策、Excel、CSV 到这里...") -> None:
-    c.rounded((430, 846, 1370, 974), 24, COLORS["surface"], "#cfe0f2", shadow=True)
-    c.text((466, 882), placeholder, 22, COLORS["subtle"])
-    c.line((466, 916, 1334, 916), COLORS["line"], 1)
-    x = 466
+    c.rounded((462, 846, 1340, 974), 24, COLORS["surface"], "#cfe0f2", shadow=True)
+    c.text((498, 882), placeholder, 22, COLORS["subtle"], max_width=690)
+    c.line((498, 916, 1302, 916), COLORS["line"], 1)
+    x = 498
     for label in ["上传资料", "连接数据", "生成 SQL", "导出报告"]:
         x = chip(c, x, 934, label)
-    c.circle(1318, 910, 30, COLORS["blue"])
-    c.text((1318, 910), "↑", 28, COLORS["white"], "mm")
+    c.circle(1288, 910, 30, COLORS["blue"])
+    c.text((1288, 910), "↑", 28, COLORS["white"], "mm")
 
 
 def side_stat(c: Canvas, y: int, title: str, value: str, desc: str, color: str = COLORS["blue_soft"]) -> None:
-    c.rounded((1442, y, 1856, y + 102), 18, color, COLORS["line"])
-    c.text((1472, y + 36), title, 22, COLORS["text"])
-    c.text((1472, y + 70), value, 20, COLORS["blue_dark"] if color == COLORS["blue_soft"] else COLORS["green_text"])
-    c.text((1640, y + 70), desc, 17, COLORS["subtle"], max_width=190)
+    c.rounded((1444, y, 1876, y + 104), 20, color, COLORS["line"])
+    c.text((1476, y + 36), title, 22, COLORS["text"])
+    c.text((1476, y + 72), value, 20, COLORS["blue_dark"] if color == COLORS["blue_soft"] else COLORS["green_text"])
+    c.text((1652, y + 72), desc, 17, COLORS["subtle"], max_width=190)
 
 
 def entry() -> None:
@@ -250,14 +252,14 @@ def entry() -> None:
     chat_shell(c, "问答式审计工作台", "一句话开始审计任务，系统自动识别意图并引导上传资料、接入数据、生成方法。", "对话首页")
     assistant_bubble(
         c,
-        392,
+        400,
         ["你可以直接输入审计目标，也可以上传资料或连接数据。", "例如：帮我检查部门预算执行中电梯维护费是否超标。"],
         h=132,
     )
-    user_bubble(c, 548, ["帮我做一个部门预算执行审计，先从资料识别开始。"])
+    user_bubble(c, 562, ["帮我做一个部门预算执行审计，先从资料识别开始。"])
     assistant_bubble(
         c,
-        664,
+        688,
         ["好的。我会按“资料识别 -> 数据接入 -> 方法执行 -> 结果归档”推进。", "你可以上传政策文件，也可以直接描述审计关注点。"],
         h=132,
     )
@@ -267,92 +269,92 @@ def entry() -> None:
     side_stat(c, 448, "资料状态", "待上传", "支持 PDF / DOCX / CSV")
     side_stat(c, 580, "数据状态", "未连接", "可直连数据库")
     side_stat(c, 712, "方法状态", "待生成", "SQL 与报告")
-    c.rounded((1442, 858, 1856, 936), 18, COLORS["orange"], COLORS["orange_line"])
-    c.text((1472, 892), "快捷建议", 22, COLORS["text"])
-    c.text((1472, 922), "上传政策文件后自动抽取规则。", 18, COLORS["orange_text"])
+    c.rounded((1444, 858, 1876, 936), 20, COLORS["orange"], COLORS["orange_line"])
+    c.text((1476, 892), "快捷建议", 22, COLORS["text"])
+    c.text((1476, 922), "上传政策文件后自动抽取规则。", 18, COLORS["orange_text"])
     c.save()
 
 
 def recognition() -> None:
     c = Canvas("01-smart-recognition")
     chat_shell(c, "智能识别问答", "用户通过对话上传政策、历史经验或直接描述问题，系统实时抽取审计关注点。", "智能识别", "资料")
-    user_bubble(c, 386, ["上传了《预算执行审计办法.pdf》，帮我提取可执行的审计规则。"], h=96)
+    user_bubble(c, 400, ["上传了《预算执行审计办法.pdf》，帮我提取可执行的审计规则。"], h=96)
     assistant_bubble(
         c,
-        506,
+        528,
         ["已识别 6 条审计关注点，并匹配 12 条历史案例。", "建议先确认“预算执行率偏低”和“采购金额合规性”两类规则。"],
         h=136,
     )
-    c.rounded((526, 666, 1260, 802), 20, COLORS["surface"], COLORS["line"])
-    c.text((558, 704), "抽取结果预览", 22, COLORS["text"])
-    c.text((558, 740), "1. 项目预算执行率偏低：对比预算金额、支付金额和执行进度。", 19, COLORS["muted"], max_width=650)
-    c.text((558, 772), "2. 采购金额合规性：检查采购限额、合同金额与支付明细。", 19, COLORS["muted"], max_width=650)
+    c.rounded((506, 696, 1256, 814), 20, COLORS["surface"], COLORS["line"])
+    c.text((540, 730), "抽取结果预览", 22, COLORS["text"])
+    c.text((540, 764), "1. 项目预算执行率偏低：对比预算金额、支付金额和执行进度。", 19, COLORS["muted"], max_width=670)
+    c.text((540, 794), "2. 采购金额合规性：检查采购限额、合同金额与支付明细。", 19, COLORS["muted"], max_width=670)
     input_box(c, "继续追问：把第 1 条规则生成审计思路，并补充历史案例依据...")
 
     side_stat(c, 316, "资料包", "3 类资料", "政策 / 经验 / 描述")
     side_stat(c, 448, "抽取进度", "6 条关注点", "已完成", COLORS["green"])
     side_stat(c, 580, "历史匹配", "12 条案例", "可引用", COLORS["green"])
-    c.rounded((1442, 712, 1856, 862), 18, COLORS["surface"], COLORS["line"])
-    c.text((1472, 750), "用户确认后", 22, COLORS["text"])
-    c.text((1472, 786), "生成审计思路并写入私有思路库，后续可在对话中继续编辑。", 18, COLORS["muted"], max_width=340)
+    c.rounded((1444, 724, 1876, 874), 20, COLORS["surface"], COLORS["line"])
+    c.text((1476, 762), "用户确认后", 22, COLORS["text"])
+    c.text((1476, 798), "生成审计思路并写入私有思路库，后续可在对话中继续编辑。", 18, COLORS["muted"], max_width=360)
     c.save()
 
 
 def ingestion() -> None:
     c = Canvas("02-data-ingestion")
     chat_shell(c, "数据接入问答", "通过对话完成数据库连接、文件上传、表结构预览、字段映射和确认入库。", "数据接入", "数据")
-    user_bubble(c, 386, ["连接 localhost:3306 的 dataset01，并预览部门预算相关表。"], h=96)
+    user_bubble(c, 400, ["连接 localhost:3306 的 dataset01，并预览部门预算相关表。"], h=96)
     assistant_bubble(
         c,
-        506,
+        528,
         ["连接成功，已识别 7 张表，共 5,830 行数据。", "我发现 3 个字段需要确认映射，建议入库前先修正。"],
         h=136,
     )
-    c.rounded((526, 666, 1260, 802), 20, COLORS["surface"], COLORS["line"])
-    c.text((558, 704), "字段映射建议", 22, COLORS["text"])
-    c.text((558, 740), "预算金额 -> budget_amount；支付金额 -> paid_amount；合同编号 -> contract_no", 19, COLORS["muted"], max_width=650)
-    c.text((558, 772), "确认后将创建临时库 tmp_auditor，并设为当前审计库。", 19, COLORS["muted"], max_width=650)
+    c.rounded((506, 696, 1256, 814), 20, COLORS["surface"], COLORS["line"])
+    c.text((540, 730), "字段映射建议", 22, COLORS["text"])
+    c.text((540, 764), "预算金额 -> budget_amount；支付金额 -> paid_amount；合同编号 -> contract_no", 19, COLORS["muted"], max_width=670)
+    c.text((540, 794), "确认后将创建临时库 tmp_auditor，并设为当前审计库。", 19, COLORS["muted"], max_width=670)
     input_box(c, "继续追问：确认字段映射并把 tmp_auditor 设置为当前审计库...")
 
     side_stat(c, 316, "连接状态", "已连接", "dataset01", COLORS["green"])
     side_stat(c, 448, "临时库", "tmp_auditor", "7 张表")
     side_stat(c, 580, "数据量", "5,830 行", "待清洗")
-    c.rounded((1442, 712, 1856, 862), 18, COLORS["orange"], COLORS["orange_line"])
-    c.text((1472, 750), "待确认项", 22, COLORS["text"])
-    c.text((1472, 786), "发现 3 个字段需确认映射，对话中回复“确认”即可入库。", 18, COLORS["orange_text"], max_width=340)
+    c.rounded((1444, 724, 1876, 874), 20, COLORS["orange"], COLORS["orange_line"])
+    c.text((1476, 762), "待确认项", 22, COLORS["text"])
+    c.text((1476, 798), "发现 3 个字段需确认映射，对话中回复“确认”即可入库。", 18, COLORS["orange_text"], max_width=360)
     c.save()
 
 
 def method_workflow() -> None:
     c = Canvas("03-method-workflow")
     chat_shell(c, "方法执行问答", "用户用自然语言要求生成 SQL、执行验证和导出报告，系统把过程沉淀为可复用方法。", "方法执行", "方法")
-    user_bubble(c, 386, ["基于电梯维护费规则生成 SQL，并运行当前审计库。"], h=96)
+    user_bubble(c, 400, ["基于电梯维护费规则生成 SQL，并运行当前审计库。"], h=96)
     assistant_bubble(
         c,
-        506,
+        528,
         ["已生成 SQL 并执行完成，命中 15 条疑点。", "下方是关键 SQL，可继续要求我解释、优化或导出报告。"],
         h=136,
     )
-    c.rounded((526, 666, 1260, 802), 20, "#f8fbff", COLORS["line"])
-    c.text((558, 704), "SQL 片段", 22, COLORS["text"])
+    c.rounded((506, 690, 1256, 826), 20, "#f8fbff", COLORS["line"])
+    c.text((540, 724), "SQL 片段", 22, COLORS["text"])
     sql = [
         "SELECT 项目名称, 支付摘要, 支付金额",
         "FROM 年度支付明细表",
         "WHERE 支付摘要 LIKE '%电梯维护%' AND 单价 > 8800;",
     ]
     for idx, line in enumerate(sql):
-        c.text((558, 740 + idx * 30), line, 19, "#334155", max_width=650)
+        c.text((540, 758 + idx * 28), line, 18, "#334155", max_width=670)
     input_box(c, "继续追问：解释命中原因，导出 Excel，并打包审计报告...")
 
     side_stat(c, 316, "执行状态", "已完成", "耗时 1.8s", COLORS["green"])
     side_stat(c, 448, "命中结果", "15 条疑点", "可预览")
     side_stat(c, 580, "归档状态", "待确认", "Excel / 报告")
-    c.rounded((1442, 712, 1856, 862), 18, COLORS["surface"], COLORS["line"])
-    c.text((1472, 750), "可执行动作", 22, COLORS["text"])
-    x = 1472
-    x = chip(c, x, 786, "导出 Excel", 138, True)
-    chip(c, x, 786, "打包报告", 138)
-    c.text((1472, 844), "对话确认后保存为可复用审计方法。", 18, COLORS["muted"])
+    c.rounded((1444, 724, 1876, 874), 20, COLORS["surface"], COLORS["line"])
+    c.text((1476, 762), "可执行动作", 22, COLORS["text"])
+    x = 1476
+    x = chip(c, x, 798, "导出 Excel", 138, True)
+    chip(c, x, 798, "打包报告", 138)
+    c.text((1476, 856), "对话确认后保存为可复用审计方法。", 18, COLORS["muted"])
     c.save()
 
 
