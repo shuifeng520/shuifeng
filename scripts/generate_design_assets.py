@@ -280,10 +280,12 @@ def entry() -> None:
     side_stat(c, 448, "资料状态", "待上传", "支持 PDF / DOCX / CSV")
     side_stat(c, 580, "数据状态", "未连接", "可直连数据库")
     side_stat(c, 712, "方法状态", "待生成", "SQL 与报告")
-    c.rounded((1444, 842, 1876, 948), 20, COLORS["orange"], COLORS["orange_line"])
-    c.text((1476, 878), "快捷建议", 22, COLORS["text"])
-    c.text((1476, 912), "上传政策文件后，系统会自动", 18, COLORS["orange_text"], max_width=360)
-    c.text((1476, 936), "抽取规则并生成审计关注点。", 18, COLORS["orange_text"], max_width=360)
+    c.rounded((1444, 824, 1876, 952), 22, COLORS["orange"], COLORS["orange_line"])
+    c.circle(1482, 866, 18, "#fff8f0", COLORS["orange_line"])
+    c.text((1482, 866), "建", 15, COLORS["orange_text"], "mm")
+    c.text((1516, 858), "快捷建议", 22, COLORS["text"])
+    c.text((1516, 890), "上传政策文件后，系统会自动", 18, COLORS["orange_text"], max_width=320)
+    c.text((1516, 918), "抽取规则并生成审计关注点。", 18, COLORS["orange_text"], max_width=320)
     c.save()
 
 
