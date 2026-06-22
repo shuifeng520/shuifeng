@@ -280,9 +280,10 @@ def entry() -> None:
     side_stat(c, 448, "资料状态", "待上传", "支持 PDF / DOCX / CSV")
     side_stat(c, 580, "数据状态", "未连接", "可直连数据库")
     side_stat(c, 712, "方法状态", "待生成", "SQL 与报告")
-    c.rounded((1444, 858, 1876, 936), 20, COLORS["orange"], COLORS["orange_line"])
-    c.text((1476, 892), "快捷建议", 22, COLORS["text"])
-    c.text((1476, 922), "上传政策文件后自动抽取规则。", 18, COLORS["orange_text"])
+    c.rounded((1444, 842, 1876, 948), 20, COLORS["orange"], COLORS["orange_line"])
+    c.text((1476, 878), "快捷建议", 22, COLORS["text"])
+    c.text((1476, 912), "上传政策文件后，系统会自动", 18, COLORS["orange_text"], max_width=360)
+    c.text((1476, 936), "抽取规则并生成审计关注点。", 18, COLORS["orange_text"], max_width=360)
     c.save()
 
 
@@ -346,25 +347,25 @@ def method_workflow() -> None:
         ["已生成 SQL 并执行完成，命中 15 条疑点。", "下方是关键 SQL，可继续要求我解释、优化或导出报告。"],
         h=136,
     )
-    c.rounded((506, 672, 1256, 826), 22, "#f8fbff", "#cfe0f2")
-    c.text((540, 706), "SQL 片段", 23, COLORS["text"])
-    c.text((540, 734), "可隐藏/显示代码，隐藏后仅保留执行摘要。", 17, COLORS["subtle"], max_width=360)
-    c.rounded((860, 694, 984, 736), 21, COLORS["green"], COLORS["green_line"])
-    c.text((922, 715), "代码已显示", 17, COLORS["green_text"], "mm")
-    c.rounded((1000, 694, 1118, 736), 21, COLORS["blue_soft"], "#b9d8ff")
-    c.text((1059, 715), "隐藏代码", 17, COLORS["blue_dark"], "mm")
-    c.rounded((1134, 694, 1224, 736), 21, COLORS["surface"], COLORS["line"])
-    c.text((1179, 715), "复制 SQL", 17, COLORS["muted"], "mm")
-    c.rounded((540, 748, 1224, 814), 16, "#f3f7fb", "#dce8f5")
+    c.rounded((506, 660, 1256, 826), 22, "#f8fbff", "#cfe0f2")
+    c.text((540, 694), "SQL 片段", 23, COLORS["text"])
+    c.rounded((860, 682, 984, 724), 21, COLORS["green"], COLORS["green_line"])
+    c.text((922, 703), "代码已显示", 17, COLORS["green_text"], "mm")
+    c.rounded((1000, 682, 1118, 724), 21, COLORS["blue_soft"], "#b9d8ff")
+    c.text((1059, 703), "隐藏代码", 17, COLORS["blue_dark"], "mm")
+    c.rounded((1134, 682, 1224, 724), 21, COLORS["surface"], COLORS["line"])
+    c.text((1179, 703), "复制 SQL", 17, COLORS["muted"], "mm")
+    c.text((540, 732), "可隐藏/显示代码，隐藏后仅保留执行摘要。", 17, COLORS["subtle"], max_width=650)
+    c.rounded((540, 758, 1224, 814), 16, "#f3f7fb", "#dce8f5")
     sql = [
         "SELECT 项目名称, 支付摘要, 支付金额",
         "FROM 年度支付明细表",
         "WHERE 支付摘要 LIKE '%电梯维护%' AND 单价 > 8800;",
     ]
     for idx, line in enumerate(sql):
-        y = 768 + idx * 20
+        y = 776 + idx * 18
         c.text((562, y), str(idx + 1), 14, COLORS["subtle"], max_width=24)
-        c.text((596, y), line, 16, "#334155", max_width=585)
+        c.text((596, y), line, 15, "#334155", max_width=585)
     input_box(c, "继续追问：解释命中原因，导出 Excel，并打包审计报告...")
 
     side_stat(c, 316, "执行状态", "已完成", "耗时 1.8s", COLORS["green"])
