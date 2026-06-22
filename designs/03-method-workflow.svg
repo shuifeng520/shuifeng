@@ -69,11 +69,21 @@
 <text x="540" y="562" fill="#10203b" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">审计智能体</text>
 <text x="540" y="598" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">已生成 SQL 并执行完成，命中 15 条疑点。</text>
 <text x="540" y="628" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">下方是关键 SQL，可继续要求我解释、优化或导出报告。</text>
-<rect x="506" y="690" width="750" height="136" rx="20" fill="#f8fbff" stroke="#d8e5f4" stroke-width="1"/>
-<text x="540" y="724" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 片段</text>
-<text x="540" y="758" fill="#334155" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SELECT 项目名称, 支付摘要, 支付金额</text>
-<text x="540" y="786" fill="#334155" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">FROM 年度支付明细表</text>
-<text x="540" y="814" fill="#334155" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">WHERE 支付摘要 LIKE &#x27;%电梯维护%&#x27; AND 单价 &gt; 8800;</text>
+<rect x="506" y="684" width="750" height="142" rx="20" fill="#f8fbff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="540" y="718" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 片段</text>
+<rect x="990" y="704" width="88" height="34" rx="17" fill="#e9fbf2" stroke="#9ce3bf" stroke-width="1"/>
+<text x="1034" y="721" fill="#137a4c" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">已展开</text>
+<rect x="1090" y="704" width="76" height="34" rx="17" fill="#ffffff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1128" y="721" fill="#155fb4" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">隐藏</text>
+<rect x="1178" y="704" width="52" height="34" rx="17" fill="#ffffff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1204" y="721" fill="#5e6f88" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">复制</text>
+<rect x="540" y="750" width="682" height="62" rx="14" fill="#f4f8fc" stroke="#e1ebf5" stroke-width="1"/>
+<text x="562" y="770" fill="#7b8aa0" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">1</text>
+<text x="596" y="770" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SELECT 项目名称, 支付摘要, 支付金额</text>
+<text x="562" y="788" fill="#7b8aa0" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">2</text>
+<text x="596" y="788" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">FROM 年度支付明细表</text>
+<text x="562" y="806" fill="#7b8aa0" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">3</text>
+<text x="596" y="806" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">WHERE 支付摘要 LIKE &#x27;%电梯维护%&#x27; AND 单价 &gt; 8800;</text>
 <rect x="462" y="834" width="878" height="158" rx="26" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
 <text x="498" y="878" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">继续追问：解释命中原因，导出 Excel，并打包审计报告...</text>
 <circle cx="1288" cy="878" r="30" fill="#2b7bd8"/>
