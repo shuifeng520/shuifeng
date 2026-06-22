@@ -17,9 +17,9 @@ HEIGHT = 1080
 FONT_PATH = "/usr/share/fonts/truetype/wqy/wqy-microhei.ttc"
 
 COLORS = {
-    "bg": "#f4f7fb",
+    "bg": "#eef3f8",
     "surface": "#ffffff",
-    "panel": "#f8fbff",
+    "panel": "#f9fbfe",
     "line": "#d8e5f4",
     "blue": "#2b7bd8",
     "blue_dark": "#155fb4",
@@ -148,13 +148,14 @@ class Canvas:
 
 def header(c: Canvas, mode: str) -> None:
     c.rounded((70, 36, 1910, 116), 24, COLORS["surface"], COLORS["line"], shadow=True)
-    c.circle(122, 76, 22, COLORS["blue"])
-    c.text((122, 76), "审", 20, COLORS["white"], "mm")
-    c.text((160, 66), "审计智能体", 28, COLORS["text"])
-    c.text((160, 96), "像 GPT / DeepSeek 一样，通过对话完成审计工作", 18, COLORS["subtle"])
-    c.rounded((750, 56, 990, 96), 20, COLORS["blue_soft"], COLORS["line"])
-    c.text((870, 76), mode, 18, COLORS["blue_dark"], "mm")
-    c.rounded((1550, 56, 1700, 96), 20, COLORS["field"])
+    c.circle(124, 76, 24, COLORS["blue"])
+    c.text((124, 76), "审", 21, COLORS["white"], "mm")
+    c.text((166, 76), "部门预算执行审计智能体", 30, COLORS["text"], "lm")
+    c.circle(538, 76, 7, COLORS["green_text"])
+    c.text((556, 76), "在线", 18, COLORS["green_text"], "lm")
+    c.rounded((806, 56, 1070, 96), 20, COLORS["blue_soft"], "#b9d8ff")
+    c.text((938, 76), mode, 18, COLORS["blue_dark"], "mm")
+    c.rounded((1550, 56, 1700, 96), 20, "#f4f7fb", COLORS["line"])
     c.text((1625, 76), "历史会话", 18, COLORS["muted"], "mm")
     c.rounded((1722, 56, 1874, 96), 20, COLORS["blue"])
     c.text((1798, 76), "新建对话", 18, COLORS["white"], "mm")
@@ -177,7 +178,7 @@ def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str 
     c.rounded((70, 144, 1910, 1016), 30, COLORS["surface"], COLORS["line"], shadow=True)
 
     # Left conversation list.
-    c.rounded((92, 166, 392, 994), 24, "#f7fbff", COLORS["line"])
+    c.rounded((92, 166, 392, 994), 24, "#f7fbff", "#e5eef8")
     c.text((122, 212), "会话", 26, COLORS["text"])
     c.rounded((122, 236, 362, 282), 16, COLORS["surface"], COLORS["line"])
     c.text((146, 259), "搜索审计问题 / 资料", 18, COLORS["subtle"], "lm")
@@ -190,7 +191,7 @@ def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str 
     y = 312
     for tag, name, meta in conversations:
         selected = tag == "当前"
-        c.rounded((116, y, 368, y + 88), 18, COLORS["blue_soft"] if selected else COLORS["surface"], "#8fc1ff" if selected else COLORS["line"], 2 if selected else 1)
+        c.rounded((116, y, 368, y + 88), 18, COLORS["blue_soft"] if selected else COLORS["surface"], "#8fc1ff" if selected else "#e4edf7", 2 if selected else 1)
         c.circle(146, y + 30, 16, COLORS["blue"] if selected else "#dbeafe")
         c.text((146, y + 30), tag[:1], 14, COLORS["white"] if selected else COLORS["muted"], "mm")
         c.text((172, y + 24), name, 19, COLORS["text"], max_width=170)
@@ -203,10 +204,10 @@ def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str 
     x = 430
     for tab in ["审计问答", "资料", "数据", "方法", "结果"]:
         x = chip(c, x, 286, tab, active=tab == active_tab)
-    c.line((430, 354, 1370, 354), COLORS["line"], 2)
+    c.line((430, 354, 1370, 354), "#e5edf7", 2)
 
     # Right context panel.
-    c.rounded((1410, 166, 1888, 994), 24, "#f7fbff", COLORS["line"])
+    c.rounded((1410, 166, 1888, 994), 24, "#f7fbff", "#e5eef8")
     c.text((1442, 214), "上下文面板", 26, COLORS["text"])
     c.text((1442, 248), "对话过程中的资料、数据和结果实时沉淀。", 18, COLORS["subtle"], max_width=390)
 
@@ -214,20 +215,20 @@ def chat_shell(c: Canvas, title: str, subtitle: str, mode: str, active_tab: str 
 def assistant_bubble(c: Canvas, y: int, lines: list[str], title: str = "审计智能体", h: int = 120) -> None:
     c.circle(452, y + 34, 24, COLORS["blue"])
     c.text((452, y + 34), "AI", 15, COLORS["white"], "mm")
-    c.rounded((492, y, 1260, y + h), 22, COLORS["panel"], COLORS["line"])
+    c.rounded((492, y, 1260, y + h), 22, COLORS["panel"], "#e2ebf5")
     c.text((526, y + 34), title, 20, COLORS["text"])
     c.multiline(526, y + 68, lines, 20, COLORS["muted"], 30)
 
 
 def user_bubble(c: Canvas, y: int, lines: list[str], h: int = 92) -> None:
-    c.rounded((712, y, 1336, y + h), 22, COLORS["blue"])
+    c.rounded((712, y, 1336, y + h), 22, COLORS["blue_dark"])
     c.multiline(744, y + 32, lines, 20, COLORS["white"], 30)
     c.circle(1364, y + 34, 24, COLORS["field"], COLORS["line"])
     c.text((1364, y + 34), "我", 16, COLORS["muted"], "mm")
 
 
 def input_box(c: Canvas, placeholder: str = "输入审计问题，或拖拽政策、Excel、CSV 到这里...") -> None:
-    c.rounded((430, 846, 1370, 974), 24, COLORS["surface"], COLORS["line"])
+    c.rounded((430, 846, 1370, 974), 24, COLORS["surface"], "#cfe0f2", shadow=True)
     c.text((466, 882), placeholder, 22, COLORS["subtle"])
     c.line((466, 916, 1334, 916), COLORS["line"], 1)
     x = 466
@@ -250,7 +251,7 @@ def entry() -> None:
     assistant_bubble(
         c,
         392,
-        ["你可以像使用 GPT / DeepSeek 一样直接提问。", "例如：帮我检查部门预算执行中电梯维护费是否超标。"],
+        ["你可以直接输入审计目标，也可以上传资料或连接数据。", "例如：帮我检查部门预算执行中电梯维护费是否超标。"],
         h=132,
     )
     user_bubble(c, 548, ["帮我做一个部门预算执行审计，先从资料识别开始。"])
