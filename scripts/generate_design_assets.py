@@ -349,24 +349,16 @@ def method_workflow() -> None:
         ["SQL 已生成并执行完成，命中 15 条疑点。"],
         h=100,
     )
-    c.rounded((506, 660, 1256, 826), 22, "#f8fbff", "#cfe0f2")
+    c.rounded((506, 660, 1256, 792), 22, "#f8fbff", "#cfe0f2")
     c.text((540, 694), "SQL 片段", 23, COLORS["text"])
-    c.rounded((860, 682, 984, 724), 21, COLORS["green"], COLORS["green_line"])
-    c.text((922, 703), "代码已显示", 17, COLORS["green_text"], "mm")
-    c.rounded((1000, 682, 1118, 724), 21, COLORS["blue_soft"], "#b9d8ff")
-    c.text((1059, 703), "隐藏代码", 17, COLORS["blue_dark"], "mm")
-    c.rounded((1134, 682, 1224, 724), 21, COLORS["surface"], COLORS["line"])
-    c.text((1179, 703), "复制 SQL", 17, COLORS["muted"], "mm")
-    c.text((540, 732), "可隐藏/显示代码，隐藏后仅保留执行摘要。", 17, COLORS["subtle"], max_width=650)
-    c.rounded((540, 758, 1224, 814), 16, "#f3f7fb", "#dce8f5")
-    sql = [
-        "SELECT 项目名称, 支付摘要, 支付金额",
-        "FROM 年度支付明细表 WHERE 单价 > 8800;",
-    ]
-    for idx, line in enumerate(sql):
-        y = 776 + idx * 18
-        c.text((562, y), str(idx + 1), 14, COLORS["subtle"], max_width=24)
-        c.text((596, y), line, 15, "#334155", max_width=585)
+    c.rounded((862, 682, 970, 724), 21, COLORS["orange"], COLORS["orange_line"])
+    c.text((916, 703), "已隐藏", 17, COLORS["orange_text"], "mm")
+    c.rounded((986, 682, 1110, 724), 21, COLORS["blue_soft"], "#b9d8ff")
+    c.text((1048, 703), "显示代码", 17, COLORS["blue_dark"], "mm")
+    c.rounded((1126, 682, 1224, 724), 21, COLORS["surface"], COLORS["line"])
+    c.text((1175, 703), "复制 SQL", 17, COLORS["muted"], "mm")
+    c.rounded((540, 738, 1224, 774), 16, "#f3f7fb", "#dce8f5")
+    c.text((566, 756), "已隐藏 SQL 代码，仅保留执行摘要；点击“显示代码”展开查看完整语句。", 16, COLORS["muted"], "lm", max_width=620)
     input_box(c, "继续追问：解释命中原因，导出 Excel，并打包审计报告...")
 
     side_stat(c, 316, "执行状态", "已完成", "耗时 1.8s", COLORS["green"])
