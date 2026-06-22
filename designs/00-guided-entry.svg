@@ -1,0 +1,123 @@
+<svg width="1980" height="1080" viewBox="0 0 1980 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+<feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#15345b" flood-opacity="0.10"/>
+</filter>
+</defs>
+<rect width="1980" height="1080" fill="#eef3f8"/>
+<rect x="70" y="36" width="1840" height="80" rx="24" fill="#ffffff" stroke="#d8e5f4" stroke-width="1" filter="url(#shadow)"/>
+<circle cx="124" cy="76" r="24" fill="#2b7bd8"/>
+<text x="124" y="76" fill="#ffffff" font-size="21" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">审</text>
+<text x="166" y="76" fill="#10203b" font-size="30" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">部门预算执行审计智能体</text>
+<circle cx="538" cy="76" r="7" fill="#137a4c"/>
+<text x="556" y="76" fill="#137a4c" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">在线</text>
+<rect x="806" y="56" width="264" height="40" rx="20" fill="#eef6ff" stroke="#b9d8ff" stroke-width="1"/>
+<text x="938" y="76" fill="#155fb4" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">对话首页</text>
+<rect x="1550" y="56" width="150" height="40" rx="20" fill="#f4f7fb" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1625" y="76" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">历史会话</text>
+<rect x="1722" y="56" width="152" height="40" rx="20" fill="#2b7bd8"/>
+<text x="1798" y="76" fill="#ffffff" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">新建对话</text>
+<rect x="70" y="148" width="320" height="868" rx="28" fill="#ffffff" stroke="#dce8f5" stroke-width="1" filter="url(#shadow)"/>
+<rect x="420" y="148" width="960" height="868" rx="28" fill="#ffffff" stroke="#dce8f5" stroke-width="1" filter="url(#shadow)"/>
+<rect x="1410" y="148" width="500" height="868" rx="28" fill="#ffffff" stroke="#dce8f5" stroke-width="1" filter="url(#shadow)"/>
+<text x="102" y="204" fill="#10203b" font-size="28" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">会话</text>
+<text x="102" y="236" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">按任务自动归档</text>
+<rect x="102" y="266" width="256" height="48" rx="16" fill="#f7fbff" stroke="#e4edf7" stroke-width="1"/>
+<text x="128" y="290" fill="#7b8aa0" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">搜索审计问题 / 资料</text>
+<rect x="100" y="352" width="260" height="96" rx="20" fill="#eef6ff" stroke="#8fc1ff" stroke-width="2"/>
+<circle cx="132" cy="386" r="17" fill="#2b7bd8"/>
+<text x="132" y="386" fill="#ffffff" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">当</text>
+<text x="162" y="380" fill="#10203b" font-size="19" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">电梯维护费超标审...</text>
+<text x="162" y="414" fill="#7b8aa0" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">刚刚 · 15 条疑点</text>
+<rect x="100" y="464" width="260" height="96" rx="20" fill="#fbfdff" stroke="#e4edf7" stroke-width="1"/>
+<circle cx="132" cy="498" r="17" fill="#dbeafe"/>
+<text x="132" y="498" fill="#5e6f88" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">资</text>
+<text x="162" y="492" fill="#10203b" font-size="19" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">政策法规抽取</text>
+<text x="162" y="526" fill="#7b8aa0" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">6 条关注点</text>
+<rect x="100" y="576" width="260" height="96" rx="20" fill="#fbfdff" stroke="#e4edf7" stroke-width="1"/>
+<circle cx="132" cy="610" r="17" fill="#dbeafe"/>
+<text x="132" y="610" fill="#5e6f88" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">数</text>
+<text x="162" y="604" fill="#10203b" font-size="19" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">dataset01 接入</text>
+<text x="162" y="638" fill="#7b8aa0" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">7 张表已识别</text>
+<rect x="100" y="688" width="260" height="96" rx="20" fill="#fbfdff" stroke="#e4edf7" stroke-width="1"/>
+<circle cx="132" cy="722" r="17" fill="#dbeafe"/>
+<text x="132" y="722" fill="#5e6f88" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">方</text>
+<text x="162" y="716" fill="#10203b" font-size="19" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 方法归档</text>
+<text x="162" y="750" fill="#7b8aa0" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">已保存 12 条</text>
+<text x="462" y="206" fill="#10203b" font-size="34" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">问答式审计工作台</text>
+<text x="462" y="250" fill="#5e6f88" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">一句话开始审计任务，系统自动识别意图并引导上传资料、接入数据、生成方法。</text>
+<rect x="462" y="300" width="138" height="42" rx="21" fill="#eef6ff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="531" y="321" fill="#155fb4" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">审计问答</text>
+<rect x="614" y="300" width="118" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="673" y="321" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">资料</text>
+<rect x="746" y="300" width="118" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="805" y="321" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">数据</text>
+<rect x="878" y="300" width="118" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="937" y="321" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">方法</text>
+<rect x="1010" y="300" width="118" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1069" y="321" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">结果</text>
+<line x1="462" y1="368" x2="1340" y2="368" stroke="#e5edf7" stroke-width="2" stroke-linecap="round"/>
+<text x="1444" y="204" fill="#10203b" font-size="28" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">上下文面板</text>
+<text x="1444" y="238" fill="#7b8aa0" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">资料、数据、方法和结果实时沉淀。</text>
+<circle cx="462" cy="436" r="24" fill="#2b7bd8"/>
+<text x="462" y="436" fill="#ffffff" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">AI</text>
+<rect x="506" y="400" width="750" height="132" rx="22" fill="#f9fbfe" stroke="#e2ebf5" stroke-width="1"/>
+<text x="540" y="434" fill="#10203b" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">审计智能体</text>
+<text x="540" y="470" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">你可以直接输入审计目标，也可以上传资料或连接数据。</text>
+<text x="540" y="500" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">例如：帮我检查部门预算执行中电梯维护费是否超标。</text>
+<rect x="724" y="562" width="604" height="92" rx="22" fill="#155fb4"/>
+<text x="756" y="594" fill="#ffffff" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">帮我做一个部门预算执行审计，先从资料识别开始。</text>
+<circle cx="1354" cy="598" r="24" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1354" y="598" fill="#5e6f88" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">我</text>
+<circle cx="462" cy="724" r="24" fill="#2b7bd8"/>
+<text x="462" y="724" fill="#ffffff" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">AI</text>
+<rect x="506" y="688" width="750" height="132" rx="22" fill="#f9fbfe" stroke="#e2ebf5" stroke-width="1"/>
+<text x="540" y="722" fill="#10203b" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">审计智能体</text>
+<text x="540" y="758" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">好的。我会按“资料识别 -&gt; 数据接入 -&gt; 方法执行 -&gt; 结果归档”推进。</text>
+<text x="540" y="788" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">你可以上传政策文件，也可以直接描述审计关注点。</text>
+<rect x="462" y="834" width="878" height="158" rx="26" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
+<text x="498" y="878" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">直接输入审计目标，例如：检查采购预算执行率偏低的原因...</text>
+<circle cx="1288" cy="878" r="30" fill="#2b7bd8"/>
+<text x="1288" y="878" fill="#ffffff" font-size="28" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">↑</text>
+<line x1="498" y1="914" x2="1302" y2="914" stroke="#d8e5f4" stroke-width="1" stroke-linecap="round"/>
+<rect x="486" y="928" width="746" height="46" rx="18" fill="#fbfdff" stroke="#edf3f9" stroke-width="1"/>
+<text x="510" y="951" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">快捷操作</text>
+<rect x="612" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="634" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="634" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">文</text>
+<text x="656" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">上传资料</text>
+<rect x="756" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="778" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="778" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">数</text>
+<text x="800" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">连接数据</text>
+<rect x="900" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="922" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="922" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">S</text>
+<text x="944" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">生成 SQL</text>
+<rect x="1044" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="1066" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="1066" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">报</text>
+<text x="1088" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">导出报告</text>
+<rect x="1444" y="316" width="432" height="104" rx="20" fill="#eef6ff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1476" y="352" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">当前任务</text>
+<text x="1476" y="388" fill="#155fb4" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">部门预算执行审计</text>
+<text x="1652" y="388" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">对话中</text>
+<rect x="1444" y="448" width="432" height="104" rx="20" fill="#eef6ff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1476" y="484" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">资料状态</text>
+<text x="1476" y="520" fill="#155fb4" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">待上传</text>
+<text x="1652" y="520" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">支持 PDF / DOCX / CSV</text>
+<rect x="1444" y="580" width="432" height="104" rx="20" fill="#eef6ff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1476" y="616" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">数据状态</text>
+<text x="1476" y="652" fill="#155fb4" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">未连接</text>
+<text x="1652" y="652" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">可直连数据库</text>
+<rect x="1444" y="712" width="432" height="104" rx="20" fill="#eef6ff" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1476" y="748" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">方法状态</text>
+<text x="1476" y="784" fill="#155fb4" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">待生成</text>
+<text x="1652" y="784" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 与报告</text>
+<rect x="1444" y="872" width="432" height="110" rx="22" fill="#fff4e8" stroke="#ffd0a3" stroke-width="1"/>
+<circle cx="1482" cy="908" r="18" fill="#fff8f0" stroke="#ffd0a3" stroke-width="1"/>
+<text x="1482" y="908" fill="#c15b18" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">建</text>
+<text x="1516" y="900" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">快捷建议</text>
+<text x="1516" y="932" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">上传政策文件后自动抽取规则，</text>
+<text x="1516" y="956" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">并生成审计关注点。</text>
+</svg>
