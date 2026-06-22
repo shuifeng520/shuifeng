@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="blueHeader" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f6fc7"/><stop offset="1" stop-color="#2f86e6"/></linearGradient>
+    <linearGradient id="softBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef6ff"/><stop offset="1" stop-color="#f8fbff"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#20324d" flood-opacity="0.12"/></filter>
+    <style>
+      .bg{fill:#f5f7fb}.sidebar{fill:#eef2f7}.card{fill:#fff;stroke:#e6ebf2;stroke-width:1}.card-soft{fill:url(#softBlue);stroke:#bfd9f7;stroke-width:1.2}.muted-card{fill:#f8fafc;stroke:#e5eaf1;stroke-width:1}.success-card{fill:#ecfdf5;stroke:#bbf7d0;stroke-width:1}.warning-card{fill:#fff7ed;stroke:#fed7aa;stroke-width:1}.code-card{fill:#f1f5f9;stroke:#dce5ef;stroke-width:1}.primary{fill:#246fbd}.primary-light{fill:#e8f2ff}.primary-text{fill:#1f6fc7}.text{fill:#172033;font-family:Inter,Microsoft YaHei,PingFang SC,Arial,sans-serif}.muted{fill:#6b778c;font-family:Inter,Microsoft YaHei,PingFang SC,Arial,sans-serif}.mono{fill:#334155;font-family:JetBrains Mono,Menlo,Consolas,monospace}.tiny{font-size:18px}.small{font-size:22px}.body{font-size:24px}.title{font-size:32px;font-weight:700}.heading{font-size:26px;font-weight:700}.bold{font-weight:700}.white{fill:#fff}.ok{fill:#15803d}.warn{fill:#b45309}.danger{fill:#ef4444}.line{stroke:#d9e2ee;stroke-width:2}.pill{fill:#f1f5f9;stroke:#e2e8f0;stroke-width:1}.pill-active{fill:#e8f2ff;stroke:#2d7dd2;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1600" height="1000" class="bg"/>
+  <rect x="0" y="0" width="236" height="1000" class="sidebar"/>
+  <text x="28" y="62" class="text title" text-anchor="start">&#23457;&#35745;&#26234;&#33021;&#20307;</text>
+  <text x="28" y="106" class="muted small" text-anchor="start">auditor &#183; &#23457;&#35745;&#21592;</text>
+  <line x1="22" y1="154" x2="214" y2="154" class="line" stroke-width="1"/>
+  <circle cx="26" cy="196" r="8" fill="#cbd5e1"/>
+  <text x="50" y="204" class="muted small" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#29983;&#25104;</text>
+  <circle cx="26" cy="238" r="8" fill="#cbd5e1"/>
+  <text x="50" y="246" class="muted small" text-anchor="start">&#23457;&#35745;&#25968;&#25454;&#25509;&#20837;</text>
+  <circle cx="26" cy="280" r="8" fill="#ef4444"/>
+  <text x="50" y="288" class="text small bold" text-anchor="start">&#23457;&#35745;&#24605;&#36335;&#31649;&#29702;</text>
+  <circle cx="26" cy="322" r="8" fill="#cbd5e1"/>
+  <text x="50" y="330" class="muted small" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#24211;&#31649;&#29702;</text>
+  <circle cx="26" cy="364" r="8" fill="#cbd5e1"/>
+  <text x="50" y="372" class="muted small" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#25191;&#34892;</text>
+  <rect x="16" y="416" width="198" height="176" rx="14" class="card"/>
+  <circle cx="26" cy="448" r="8" fill="#ef4444"/>
+  <text x="50" y="456" class="text small bold" text-anchor="start">&#26041;&#27861;&#20840;&#27969;&#31243;&#24037;&#20316;&#21488;</text>
+  <circle cx="26" cy="490" r="8" fill="#cbd5e1"/>
+  <text x="50" y="498" class="muted small" text-anchor="start">&#24605;&#36335;&#35814;&#24773;</text>
+  <circle cx="26" cy="532" r="8" fill="#cbd5e1"/>
+  <text x="50" y="540" class="muted small" text-anchor="start">SQL &#26041;&#27861;</text>
+  <circle cx="26" cy="574" r="8" fill="#cbd5e1"/>
+  <text x="50" y="582" class="muted small" text-anchor="start">&#25191;&#34892;&#32467;&#26524;</text>
+  <rect x="18" y="910" width="198" height="44" rx="8" class="card"/>
+  <text x="78" y="939" class="muted small" text-anchor="start">&#36864;&#20986;&#30331;&#24405;</text>
+  <rect x="276" y="34" width="1280" height="74" rx="8" fill="url(#blueHeader)"/>
+  <text x="306" y="80" class="white heading" text-anchor="start">&#37096;&#38376;&#39044;&#31639;&#25191;&#34892;&#23457;&#35745;&#26234;&#33021;&#20307;</text>
+  <text x="1528" y="80" class="white small" text-anchor="end">&#24403;&#21069;&#29992;&#25143;: auditor&#65288;&#23457;&#35745;&#21592;&#65289;</text>
+  <text x="276" y="158" class="text title" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#20840;&#27969;&#31243;&#24037;&#20316;&#21488;</text>
+  <text x="276" y="196" class="muted body" text-anchor="start">&#25226;&#24605;&#36335;&#31649;&#29702;&#12289;&#26041;&#27861;&#24211;&#31649;&#29702;&#12289;&#26041;&#27861;&#25191;&#34892;&#21512;&#24182;&#20026;&#19968;&#20010;&#20174;&#23457;&#35745;&#24605;&#36335;&#21040;&#32467;&#26524;&#23548;&#20986;&#30340;&#36830;&#32493;&#27969;&#31243;&#12290;</text>
+  <rect x="276" y="232" width="1280" height="70" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="300" y="276" class="text small bold" text-anchor="start">&#35774;&#35745;&#37325;&#28857;&#65306;&#24038;&#20391;&#36873;&#24605;&#36335;&#65292;&#20013;&#38388;&#30475;&#35268;&#21017;&#24182;&#29983;&#25104; SQL&#65292;&#21491;&#20391;&#25191;&#34892;&#39564;&#35777;&#21644;&#23548;&#20986;&#32467;&#26524;&#65307;&#20943;&#23569;&#19977;&#27425;&#39029;&#38754;&#36339;&#36716;&#12290;</text>
+  <line x1="318" y1="340" x2="1368" y2="340" stroke="#d7e5f7" stroke-width="8" stroke-linecap="round"/>
+  <line x1="318" y1="340" x2="980" y2="340" stroke="#2d7dd2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="318" cy="340" r="28" fill="#2d7dd2" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="318" y="349" class="white body bold" text-anchor="middle">1</text>
+  <text x="318" y="394" class="text small bold" text-anchor="middle">&#36873;&#25321;&#24605;&#36335;</text>
+  <circle cx="668" cy="340" r="28" fill="#2d7dd2" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="668" y="349" class="white body bold" text-anchor="middle">2</text>
+  <text x="668" y="394" class="text small bold" text-anchor="middle">&#29983;&#25104; SQL</text>
+  <circle cx="1018" cy="340" r="28" fill="#2d7dd2" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="1018" y="349" class="white body bold" text-anchor="middle">3</text>
+  <text x="1018" y="394" class="text small bold" text-anchor="middle">&#25191;&#34892;&#39564;&#35777;</text>
+  <circle cx="1368" cy="340" r="28" fill="#fff" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="1368" y="349" class="primary-text body bold" text-anchor="middle">4</text>
+  <text x="1368" y="394" class="text small bold" text-anchor="middle">&#23548;&#20986;&#24402;&#26723;</text>
+  <rect x="276" y="430" width="410" height="500" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="310" y="478" class="text heading" text-anchor="start">1 &#36873;&#25321;&#23457;&#35745;&#24605;&#36335;</text>
+  <rect x="310" y="506" width="128" height="38" rx="8" fill="#f1f5f9" stroke="#e5eaf1"/>
+  <text x="332" y="532" class="muted tiny" text-anchor="start">&#20840;&#37096;</text>
+  <rect x="452" y="506" width="196" height="38" rx="8" fill="#f1f5f9" stroke="#e5eaf1"/>
+  <text x="474" y="532" class="muted tiny" text-anchor="start">&#25628;&#32034;&#20851;&#38190;&#35789;</text>
+  <text x="310" y="574" class="muted tiny" text-anchor="start">&#20849; 26 &#26465;</text>
+  <rect x="310" y="596" width="338" height="44" rx="8" fill="#246fbd" stroke="#d6e1ee"/>
+  <text x="479.0" y="625" class="white tiny bold" text-anchor="middle">&#8226; 4-1-1 &#30005;&#26799;&#32500;&#25252;&#36153;&#21333;&#20215;&#36229;&#26631;&#23457;&#35745;</text>
+  <text x="310" y="664" class="muted tiny" text-anchor="start">&#36164;&#37329;&#25903;&#20986;&#21512;&#35268;&#24615;</text>
+  <rect x="310" y="672" width="338" height="44" rx="8" fill="#fff" stroke="#d6e1ee"/>
+  <text x="479.0" y="701" class="muted tiny" text-anchor="middle">&#38145; 4-1-2 &#21512;&#21516;&#39118;&#31995;&#32479;&#20013;&#22830;&#31354;&#35843;&#32500;&#25252;&#36153;&#36229;&#26631;&#23457;&#35745;</text>
+  <text x="310" y="740" class="muted tiny" text-anchor="start">&#36164;&#37329;&#25903;&#20986;&#21512;&#35268;&#24615;</text>
+  <rect x="310" y="748" width="338" height="44" rx="8" fill="#fff" stroke="#d6e1ee"/>
+  <text x="479.0" y="777" class="muted tiny" text-anchor="middle">&#38145; 1-9 &#22823;&#22411;&#25110;&#23450;&#21046;&#31867;&#39033;&#30446;&#38656;&#27714;&#35843;&#26597;&#25253;&#21578;&#32570;&#22833;</text>
+  <text x="310" y="816" class="muted tiny" text-anchor="start">&#39033;&#30446;&#31435;&#39033;&#36164;&#26009;&#23436;&#25972;&#24615;</text>
+  <rect x="310" y="840" width="338" height="58" rx="10" class="primary-light"/>
+  <text x="330" y="876" class="primary-text tiny bold" text-anchor="start">&#24050;&#36873;&#24605;&#36335;&#65306;&#26597;&#30475;&#35814;&#24773;&#24182;&#29983;&#25104; SQL &#26041;&#27861;</text>
+  <rect x="712" y="430" width="438" height="500" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="746" y="478" class="text heading" text-anchor="start">2 &#26597;&#30475;&#35814;&#24773;&#24182;&#32534;&#36753; SQL</text>
+  <text x="746" y="512" class="text body bold" text-anchor="start">4-1-1 &#183; &#30005;&#26799;&#32500;&#25252;&#36153;&#21333;&#20215;&#36229;&#26631;&#23457;&#35745;</text>
+  <text x="746" y="544" class="muted tiny" text-anchor="start">&#35268;&#21017;&#20998;&#31867;&#65306;&#36164;&#37329;&#25903;&#20986;&#21512;&#35268;&#24615;</text>
+  <rect x="746" y="566" width="370" height="66" rx="12" class="card-soft"/>
+  <text x="766" y="596" class="primary-text tiny bold" text-anchor="start">&#20998;&#26512;&#24605;&#36335;&#65306;&#25552;&#21462;&#21512;&#21516;&#19982;&#25903;&#20184;&#26126;&#32454;&#65292;&#35745;&#31639;&#21333;&#20215;&#24182;&#19982;&#26631;&#20934;&#20540;&#27604;&#23545;&#12290;</text>
+  <text x="766" y="620" class="muted tiny" text-anchor="start">&#36229;&#20986; 8800 &#20803;/&#37096;&#183;&#24180;&#30340;&#35760;&#24405;&#36827;&#20837;&#30097;&#28857;&#12290;</text>
+  <rect x="746" y="652" width="370" height="52" rx="12" class="success-card"/>
+  <text x="766" y="684" class="ok tiny bold" text-anchor="start">&#29616;&#22330;&#23457;&#35745;&#24314;&#35758;&#65306;&#26680;&#23545;&#35745;&#36153;&#22522;&#25968;&#12289;&#21512;&#21516;&#26085;&#26399;&#21644;&#26381;&#21153;&#33539;&#22260;&#12290;</text>
+  <rect x="746" y="724" width="104" height="38" rx="19" class="pill-active"/>
+  <text x="798.0" y="750" class="primary-text small bold" text-anchor="middle">&#24050;&#29983;&#25104;</text>
+  <rect x="864" y="724" width="104" height="38" rx="19" class="pill"/>
+  <text x="916.0" y="750" class="muted small" text-anchor="middle">&#21487;&#32534;&#36753;</text>
+  <rect x="982" y="724" width="104" height="38" rx="19" class="pill"/>
+  <text x="1034.0" y="750" class="muted small" text-anchor="middle">&#24050;&#38145;&#23450;</text>
+  <rect x="746" y="782" width="370" height="112" rx="10" class="code-card"/>
+  <text x="766" y="812" class="mono tiny" text-anchor="start">SELECT &#39033;&#30446;&#21517;&#31216;, &#25903;&#20184;&#25688;&#35201;, &#25903;&#20184;&#37329;&#39069;</text>
+  <text x="766" y="840" class="mono tiny" text-anchor="start">FROM &#24180;&#24230;&#25903;&#20184;&#26126;&#32454;&#34920;</text>
+  <text x="766" y="868" class="mono tiny" text-anchor="start">WHERE &#25903;&#20184;&#25688;&#35201; LIKE "%&#30005;&#26799;&#32500;&#25252;%"</text>
+  <text x="766" y="896" class="mono tiny" text-anchor="start">AND &#21333;&#20215; &gt; 8800;</text>
+  <rect x="1176" y="430" width="380" height="500" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="1210" y="478" class="text heading" text-anchor="start">3 &#25191;&#34892;&#39564;&#35777;&#24182;&#23548;&#20986;</text>
+  <text x="1210" y="512" class="muted small" text-anchor="start">&#21516;&#39029;&#25191;&#34892; SQL&#65292;&#24182;&#39044;&#35272;&#21629;&#20013;&#32467;&#26524;&#12290;</text>
+  <rect x="1210" y="548" width="312" height="52" rx="10" fill="#246fbd"/>
+  <text x="1366" y="582" class="white small bold" text-anchor="middle">&#36816;&#34892;&#24403;&#21069; SQL &#26041;&#27861;</text>
+  <rect x="1210" y="620" width="312" height="86" rx="14" class="success-card"/>
+  <text x="1234" y="654" class="text small bold" text-anchor="start">&#25191;&#34892;&#23436;&#25104;&#65306;&#21629;&#20013; 15 &#26465;&#30097;&#28857;</text>
+  <text x="1234" y="686" class="muted tiny" text-anchor="start">&#32791;&#26102; 1.8s &#183; &#25968;&#25454;&#24211; dataset01</text>
+  <rect x="1210" y="724" width="312" height="104" rx="14" class="muted-card"/>
+  <text x="1234" y="760" class="text small bold" text-anchor="start">&#32467;&#26524;&#39044;&#35272;</text>
+  <text x="1234" y="794" class="muted tiny" text-anchor="start">&#8226; A &#21333;&#20301;&#30005;&#26799;&#32500;&#25252;&#36153; 9200 &#20803;/&#37096;</text>
+  <text x="1234" y="822" class="muted tiny" text-anchor="start">&#8226; B &#21333;&#20301;&#30005;&#26799;&#32500;&#25252;&#36153; 10800 &#20803;/&#37096;</text>
+  <rect x="1210" y="848" width="146" height="46" rx="10" fill="#fff" stroke="#d6e1ee"/>
+  <text x="1283" y="879" class="primary-text tiny bold" text-anchor="middle">&#23548;&#20986; Excel</text>
+  <rect x="1376" y="848" width="146" height="46" rx="10" fill="#fff" stroke="#d6e1ee"/>
+  <text x="1449" y="879" class="primary-text tiny bold" text-anchor="middle">&#25171;&#21253;&#25253;&#21578;</text>
+  <rect x="276" y="934" width="1280" height="2" fill="#e6ebf2"/>
+  <rect x="276" y="948" width="735" height="40" rx="10" class="primary-light"/>
+  <text x="302" y="975" class="primary-text small bold" text-anchor="start">&#32479;&#19968;&#32467;&#26524;&#65306;&#24605;&#36335;&#12289;SQL &#26041;&#27861;&#21644;&#25191;&#34892;&#32467;&#26524;&#20445;&#30041;&#20851;&#32852;&#65292;&#21487;&#22238;&#21040;&#20219;&#19968;&#27493;&#32534;&#36753;&#12290;</text>
+  <rect x="1044" y="940" width="156" height="48" rx="10" fill="#fff" stroke="#d6e1ee"/>
+  <text x="1122" y="972" class="muted small bold" text-anchor="middle">&#19978;&#19968;&#27493;</text>
+  <rect x="1218" y="940" width="302" height="48" rx="10" fill="#246fbd"/>
+  <text x="1369" y="972" class="white small bold" text-anchor="middle">&#20445;&#23384;&#26041;&#27861;&#24182;&#24402;&#26723;&#32467;&#26524;</text>
+</svg>

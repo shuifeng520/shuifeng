@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="blueHeader" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f6fc7"/><stop offset="1" stop-color="#2f86e6"/></linearGradient>
+    <linearGradient id="softBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef6ff"/><stop offset="1" stop-color="#f8fbff"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#20324d" flood-opacity="0.12"/></filter>
+    <style>
+      .bg{fill:#f5f7fb}.sidebar{fill:#eef2f7}.card{fill:#fff;stroke:#e6ebf2;stroke-width:1}.card-soft{fill:url(#softBlue);stroke:#bfd9f7;stroke-width:1.2}.muted-card{fill:#f8fafc;stroke:#e5eaf1;stroke-width:1}.success-card{fill:#ecfdf5;stroke:#bbf7d0;stroke-width:1}.warning-card{fill:#fff7ed;stroke:#fed7aa;stroke-width:1}.primary{fill:#246fbd}.primary-light{fill:#e8f2ff}.primary-text{fill:#1f6fc7}.text{fill:#172033;font-family:Inter,Microsoft YaHei,PingFang SC,Arial,sans-serif}.muted{fill:#6b778c;font-family:Inter,Microsoft YaHei,PingFang SC,Arial,sans-serif}.tiny{font-size:18px}.small{font-size:22px}.body{font-size:24px}.title{font-size:32px;font-weight:700}.heading{font-size:26px;font-weight:700}.bold{font-weight:700}.white{fill:#fff}.ok{fill:#15803d}.warn{fill:#b45309}.danger{fill:#ef4444}.line{stroke:#d9e2ee;stroke-width:2}.pill{fill:#f1f5f9;stroke:#e2e8f0;stroke-width:1}.pill-active{fill:#e8f2ff;stroke:#2d7dd2;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1600" height="1000" class="bg"/>
+  <rect x="0" y="0" width="236" height="1000" class="sidebar"/>
+  <text x="28" y="62" class="text title" text-anchor="start">&#23457;&#35745;&#26234;&#33021;&#20307;</text>
+  <text x="28" y="106" class="muted small" text-anchor="start">auditor &#183; &#23457;&#35745;&#21592;</text>
+  <line x1="22" y1="154" x2="214" y2="154" class="line" stroke-width="1"/>
+  <circle cx="26" cy="196" r="8" fill="#cbd5e1"/>
+  <text x="50" y="204" class="muted small" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#29983;&#25104;</text>
+  <circle cx="26" cy="238" r="8" fill="#ef4444"/>
+  <text x="50" y="246" class="text small bold" text-anchor="start">&#23457;&#35745;&#25968;&#25454;&#25509;&#20837;</text>
+  <circle cx="26" cy="280" r="8" fill="#cbd5e1"/>
+  <text x="50" y="288" class="muted small" text-anchor="start">&#23457;&#35745;&#24605;&#36335;&#31649;&#29702;</text>
+  <circle cx="26" cy="322" r="8" fill="#cbd5e1"/>
+  <text x="50" y="330" class="muted small" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#24211;&#31649;&#29702;</text>
+  <circle cx="26" cy="364" r="8" fill="#cbd5e1"/>
+  <text x="50" y="372" class="muted small" text-anchor="start">&#23457;&#35745;&#26041;&#27861;&#25191;&#34892;</text>
+  <rect x="16" y="416" width="198" height="152" rx="14" class="card"/>
+  <circle cx="26" cy="448" r="8" fill="#ef4444"/>
+  <text x="50" y="456" class="text small bold" text-anchor="start">&#25968;&#25454;&#25509;&#20837;&#24037;&#20316;&#21488;</text>
+  <circle cx="26" cy="490" r="8" fill="#cbd5e1"/>
+  <text x="50" y="498" class="muted small" text-anchor="start">&#36830;&#25509;&#37197;&#32622;</text>
+  <circle cx="26" cy="532" r="8" fill="#cbd5e1"/>
+  <text x="50" y="540" class="muted small" text-anchor="start">&#25991;&#20214;&#19978;&#20256;</text>
+  <rect x="18" y="910" width="198" height="44" rx="8" class="card"/>
+  <text x="78" y="939" class="muted small" text-anchor="start">&#36864;&#20986;&#30331;&#24405;</text>
+  <rect x="276" y="34" width="1280" height="74" rx="8" fill="url(#blueHeader)"/>
+  <text x="306" y="80" class="white heading" text-anchor="start">&#37096;&#38376;&#39044;&#31639;&#25191;&#34892;&#23457;&#35745;&#26234;&#33021;&#20307;</text>
+  <text x="1528" y="80" class="white small" text-anchor="end">&#24403;&#21069;&#29992;&#25143;: auditor&#65288;&#23457;&#35745;&#21592;&#65289;</text>
+  <text x="276" y="158" class="text title" text-anchor="start">&#23457;&#35745;&#25968;&#25454;&#25509;&#20837;&#24037;&#20316;&#21488;</text>
+  <text x="276" y="196" class="muted body" text-anchor="start">&#25226;&#25968;&#25454;&#24211;&#36830;&#25509;&#35774;&#32622;&#21644;&#25968;&#25454;&#25991;&#20214;&#19978;&#20256;&#21512;&#24182;&#20026;&#19968;&#20010;&#20998;&#27493;&#20837;&#21475;&#65292;&#29992;&#25143;&#25353;&#24341;&#23548;&#23436;&#25104;&#25509;&#20837;&#12289;&#39044;&#35272;&#12289;&#20837;&#24211;&#12290;</text>
+  <rect x="276" y="232" width="1280" height="70" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="300" y="276" class="text small bold" text-anchor="start">&#35774;&#35745;&#37325;&#28857;&#65306;&#19968;&#20010;&#20837;&#21475;&#36873;&#25321;&#25509;&#20837;&#26041;&#24335;&#65307;&#21516;&#39029;&#23436;&#25104;&#36830;&#25509;&#25110;&#19978;&#20256;&#65307;&#21491;&#20391;&#23454;&#26102;&#26174;&#31034;&#20020;&#26102;&#24211;&#12289;&#34920;&#25968;&#37327;&#12289;&#28165;&#27927;&#29366;&#24577;&#21644;&#20837;&#24211;&#32467;&#26524;&#12290;</text>
+  <line x1="318" y1="340" x2="1368" y2="340" stroke="#d7e5f7" stroke-width="8" stroke-linecap="round"/>
+  <line x1="318" y1="340" x2="980" y2="340" stroke="#2d7dd2" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="318" cy="340" r="28" fill="#2d7dd2" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="318" y="349" class="white body bold" text-anchor="middle">1</text>
+  <text x="318" y="394" class="text small bold" text-anchor="middle">&#36873;&#25321;&#26041;&#24335;</text>
+  <circle cx="668" cy="340" r="28" fill="#2d7dd2" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="668" y="349" class="white body bold" text-anchor="middle">2</text>
+  <text x="668" y="394" class="text small bold" text-anchor="middle">&#37197;&#32622;/&#19978;&#20256;</text>
+  <circle cx="1018" cy="340" r="28" fill="#2d7dd2" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="1018" y="349" class="white body bold" text-anchor="middle">3</text>
+  <text x="1018" y="394" class="text small bold" text-anchor="middle">&#39044;&#35272;&#28165;&#27927;</text>
+  <circle cx="1368" cy="340" r="28" fill="#fff" stroke="#2d7dd2" stroke-width="4"/>
+  <text x="1368" y="349" class="primary-text body bold" text-anchor="middle">4</text>
+  <text x="1368" y="394" class="text small bold" text-anchor="middle">&#35774;&#20026;&#23457;&#35745;&#24211;</text>
+  <rect x="276" y="430" width="820" height="500" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="310" y="478" class="text heading" text-anchor="start">1 &#36873;&#25321;&#25968;&#25454;&#25509;&#20837;&#26041;&#24335;</text>
+  <text x="310" y="512" class="muted small" text-anchor="start">&#25968;&#25454;&#24211;&#30452;&#36830;&#21644;&#25991;&#20214;&#19978;&#20256;&#22312;&#21516;&#19968;&#39029;&#20999;&#25442;&#65292;&#20943;&#23569;&#29992;&#25143;&#22312;&#33756;&#21333;&#38388;&#26469;&#22238;&#36339;&#36716;&#12290;</text>
+  <rect x="310" y="548" width="360" height="108" rx="16" class="card-soft"/>
+  <circle cx="342" cy="584" r="18" fill="#2d7dd2"/>
+  <text x="342" y="592" class="white small bold" text-anchor="middle">D</text>
+  <text x="372" y="584" class="text body bold" text-anchor="start">&#25968;&#25454;&#24211;&#30452;&#36830;</text>
+  <text x="372" y="620" class="muted small" text-anchor="start">&#36866;&#21512;&#24050;&#26377; MySQL / PostgreSQL / SQL Server</text>
+  <text x="330" y="648" class="primary-text tiny bold" text-anchor="start">&#24403;&#21069;&#31034;&#20363;&#65306;localhost:3306 / dataset01</text>
+  <rect x="702" y="548" width="360" height="108" rx="16" class="muted-card"/>
+  <circle cx="734" cy="584" r="18" fill="#dbe4ef"/>
+  <text x="734" y="592" class="muted small bold" text-anchor="middle">F</text>
+  <text x="764" y="584" class="text body bold" text-anchor="start">&#25991;&#20214;&#23548;&#20837;</text>
+  <text x="764" y="620" class="muted small" text-anchor="start">&#25903;&#25345; Excel / CSV &#25209;&#37327;&#19978;&#20256;&#24182;&#29983;&#25104;&#20020;&#26102;&#24211;</text>
+  <text x="724" y="648" class="primary-text tiny bold" text-anchor="start">&#19978;&#20256;&#21518;&#33258;&#21160;&#35782;&#21035;&#23383;&#27573;&#21644;&#25968;&#25454;&#34920;</text>
+  <line x1="310" y1="690" x2="1062" y2="690" class="line" stroke-width="1"/>
+  <text x="310" y="736" class="text heading" text-anchor="start">2 &#22635;&#20889;&#36830;&#25509;&#20449;&#24687;&#25110;&#19978;&#20256;&#25991;&#20214;</text>
+  <text x="310" y="760" class="muted tiny" text-anchor="start">&#25968;&#25454;&#24211;&#22320;&#22336; Host</text>
+  <rect x="310" y="772" width="250" height="38" rx="8" fill="#f1f5f9" stroke="#e5eaf1"/>
+  <text x="324" y="798" class="muted tiny" text-anchor="start">localhost</text>
+  <text x="578" y="760" class="muted tiny" text-anchor="start">&#31471;&#21475; Port</text>
+  <rect x="578" y="772" width="150" height="38" rx="8" fill="#f1f5f9" stroke="#e5eaf1"/>
+  <text x="592" y="798" class="muted tiny" text-anchor="start">3306</text>
+  <text x="746" y="760" class="muted tiny" text-anchor="start">&#29992;&#25143;&#21517;</text>
+  <rect x="746" y="772" width="146" height="38" rx="8" fill="#f1f5f9" stroke="#e5eaf1"/>
+  <text x="760" y="798" class="muted tiny" text-anchor="start">user1</text>
+  <text x="910" y="760" class="muted tiny" text-anchor="start">&#23494;&#30721;</text>
+  <rect x="910" y="772" width="152" height="38" rx="8" fill="#f1f5f9" stroke="#e5eaf1"/>
+  <text x="924" y="798" class="muted tiny" text-anchor="start">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</text>
+  <rect x="310" y="840" width="360" height="58" rx="10" fill="#246fbd"/>
+  <text x="490" y="878" class="white small bold" text-anchor="middle">&#27979;&#35797;&#36830;&#25509;&#24182;&#35835;&#21462;&#34920;&#32467;&#26500;</text>
+  <rect x="702" y="840" width="360" height="58" rx="10" fill="#ffffff" stroke="#d6e1ee"/>
+  <text x="882" y="878" class="primary-text small bold" text-anchor="middle">&#25302;&#25341;&#19978;&#20256; Excel / CSV &#25991;&#20214;</text>
+  <rect x="1126" y="430" width="430" height="500" rx="18" class="card" filter="url(#shadow)"/>
+  <text x="1160" y="478" class="text heading" text-anchor="start">3 &#39044;&#35272;&#28165;&#27927;&#24182;&#30830;&#35748;&#20837;&#24211;</text>
+  <text x="1160" y="512" class="muted small" text-anchor="start">&#36830;&#25509;&#25110;&#19978;&#20256;&#21518;&#65292;&#31995;&#32479;&#32479;&#19968;&#29983;&#25104;&#20020;&#26102;&#23457;&#35745;&#24211;&#39044;&#35272;&#12290;</text>
+  <rect x="1160" y="548" width="118" height="38" rx="19" fill="#dcfce7" stroke="#cde6d7"/>
+  <text x="1219.0" y="574" class="ok small bold" text-anchor="middle">&#24050;&#36830;&#25509;</text>
+  <rect x="1294" y="548" width="110" height="38" rx="19" class="pill-active"/>
+  <text x="1349.0" y="574" class="primary-text small bold" text-anchor="middle">&#34920;&#39044;&#35272;</text>
+  <rect x="1420" y="548" width="104" height="38" rx="19" class="pill"/>
+  <text x="1472.0" y="574" class="muted small" text-anchor="middle">&#24453;&#20837;&#24211;</text>
+  <rect x="1160" y="612" width="362" height="92" rx="14" class="success-card"/>
+  <text x="1184" y="648" class="text small bold" text-anchor="start">&#20020;&#26102;&#24211;&#65306;tmp_auditor</text>
+  <text x="1184" y="680" class="muted tiny" text-anchor="start">&#24050;&#35782;&#21035; 7 &#24352;&#34920;&#65292;&#20849; 5,830 &#34892;&#25968;&#25454;</text>
+  <rect x="1160" y="724" width="362" height="120" rx="14" class="muted-card"/>
+  <text x="1184" y="760" class="text small bold" text-anchor="start">&#25968;&#25454;&#34920;&#39044;&#35272;</text>
+  <text x="1184" y="794" class="muted tiny" text-anchor="start">&#8226; &#22266;&#23450;&#36164;&#20135;&#34920;        2478 &#34892;</text>
+  <text x="1184" y="822" class="muted tiny" text-anchor="start">&#8226; &#24180;&#24230;&#39044;&#31639;&#26126;&#32454;&#34920;    1006 &#34892;</text>
+  <text x="1184" y="850" class="muted tiny" text-anchor="start">&#8226; &#25903;&#20986;&#27969;&#27700;&#26126;&#32454;&#34920;    1236 &#34892;</text>
+  <rect x="1160" y="866" width="362" height="42" rx="12" class="warning-card"/>
+  <text x="1184" y="894" class="warn tiny bold" text-anchor="start">&#21457;&#29616; 3 &#20010;&#23383;&#27573;&#38656;&#30830;&#35748;&#26144;&#23556;&#65292;&#20837;&#24211;&#21069;&#21487;&#20462;&#27491;&#12290;</text>
+  <rect x="276" y="934" width="1280" height="2" fill="#e6ebf2"/>
+  <rect x="276" y="948" width="720" height="40" rx="10" class="primary-light"/>
+  <text x="302" y="975" class="primary-text small bold" text-anchor="start">&#32479;&#19968;&#32467;&#26524;&#65306;&#25968;&#25454;&#24211;&#36830;&#25509;&#21644;&#25991;&#20214;&#19978;&#20256;&#37117;&#20250;&#36827;&#20837;&#20020;&#26102;&#24211;&#65292;&#30830;&#35748;&#21518;&#35774;&#20026;&#24403;&#21069;&#23457;&#35745;&#24211;&#12290;</text>
+  <rect x="1044" y="940" width="156" height="48" rx="10" fill="#fff" stroke="#d6e1ee"/>
+  <text x="1122" y="972" class="muted small bold" text-anchor="middle">&#19978;&#19968;&#27493;</text>
+  <rect x="1218" y="940" width="302" height="48" rx="10" fill="#246fbd"/>
+  <text x="1369" y="972" class="white small bold" text-anchor="middle">&#30830;&#35748;&#20837;&#24211;&#24182;&#36827;&#20837;&#25968;&#25454;&#20998;&#26512;</text>
+</svg>
