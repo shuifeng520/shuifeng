@@ -114,11 +114,10 @@
 <text x="1476" y="748" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">方法状态</text>
 <text x="1476" y="784" fill="#155fb4" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">待生成</text>
 <text x="1652" y="784" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 与报告</text>
-<rect x="1444" y="842" width="432" height="138" rx="22" fill="#fff4e8" stroke="#ffd0a3" stroke-width="1"/>
-<circle cx="1482" cy="880" r="18" fill="#fff8f0" stroke="#ffd0a3" stroke-width="1"/>
-<text x="1482" y="880" fill="#c15b18" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">建</text>
-<text x="1516" y="872" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">快捷建议</text>
-<text x="1516" y="906" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">上传政策文件后，</text>
-<text x="1516" y="930" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">系统自动抽取规则，</text>
-<text x="1516" y="954" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">并生成审计关注点。</text>
+<rect x="1444" y="872" width="432" height="110" rx="22" fill="#fff4e8" stroke="#ffd0a3" stroke-width="1"/>
+<circle cx="1482" cy="908" r="18" fill="#fff8f0" stroke="#ffd0a3" stroke-width="1"/>
+<text x="1482" y="908" fill="#c15b18" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">建</text>
+<text x="1516" y="900" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">快捷建议</text>
+<text x="1516" y="932" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">上传政策文件后自动抽取规则，</text>
+<text x="1516" y="956" fill="#c15b18" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">并生成审计关注点。</text>
 </svg>
