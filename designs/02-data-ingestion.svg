@@ -73,17 +73,17 @@
 <text x="540" y="730" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">字段映射建议</text>
 <text x="540" y="764" fill="#5e6f88" font-size="19" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">预算金额 -&gt; budget_amount；支付金额 -&gt; paid_amount；合同编号 -&gt; contra...</text>
 <text x="540" y="794" fill="#5e6f88" font-size="19" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">确认后将创建临时库 tmp_auditor，并设为当前审计库。</text>
-<rect x="462" y="846" width="878" height="128" rx="24" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
+<rect x="462" y="846" width="878" height="138" rx="24" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
 <text x="498" y="882" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">继续追问：确认字段映射并把 tmp_auditor 设置为当前审计库...</text>
 <line x1="498" y1="916" x2="1302" y2="916" stroke="#d8e5f4" stroke-width="1" stroke-linecap="round"/>
-<rect x="498" y="934" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="567" y="955" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">上传资料</text>
-<rect x="650" y="934" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="719" y="955" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">连接数据</text>
-<rect x="802" y="934" width="186" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="895" y="955" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">生成 SQL</text>
-<rect x="1002" y="934" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="1071" y="955" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">导出报告</text>
+<rect x="498" y="928" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="567" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">上传资料</text>
+<rect x="650" y="928" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="719" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">连接数据</text>
+<rect x="802" y="928" width="186" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="895" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">生成 SQL</text>
+<rect x="1002" y="928" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
+<text x="1071" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">导出报告</text>
 <circle cx="1288" cy="910" r="30" fill="#2b7bd8"/>
 <text x="1288" y="910" fill="#ffffff" font-size="28" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">↑</text>
 <rect x="1444" y="316" width="432" height="104" rx="20" fill="#e9fbf2" stroke="#d8e5f4" stroke-width="1"/>

@@ -230,12 +230,12 @@ def user_bubble(c: Canvas, y: int, lines: list[str], h: int = 92) -> None:
 
 
 def input_box(c: Canvas, placeholder: str = "输入审计问题，或拖拽政策、Excel、CSV 到这里...") -> None:
-    c.rounded((462, 846, 1340, 974), 24, COLORS["surface"], "#cfe0f2", shadow=True)
+    c.rounded((462, 846, 1340, 984), 24, COLORS["surface"], "#cfe0f2", shadow=True)
     c.text((498, 882), placeholder, 22, COLORS["subtle"], max_width=690)
     c.line((498, 916, 1302, 916), COLORS["line"], 1)
     x = 498
     for label in ["上传资料", "连接数据", "生成 SQL", "导出报告"]:
-        x = chip(c, x, 934, label)
+        x = chip(c, x, 928, label)
     c.circle(1288, 910, 30, COLORS["blue"])
     c.text((1288, 910), "↑", 28, COLORS["white"], "mm")
 
