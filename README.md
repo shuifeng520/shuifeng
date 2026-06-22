@@ -9,3 +9,21 @@
 - [智能识别工作流](designs/01-smart-recognition.svg)
 - [审计数据接入工作流](designs/02-data-ingestion.svg)
 - [审计方法全流程工作流](designs/03-method-workflow.svg)
+
+## PNG 图片预览
+
+### 1. 引导式总入口
+
+![引导式总入口](images/00-guided-entry.png)
+
+### 2. 智能识别工作流
+
+![智能识别工作流](images/01-smart-recognition.png)
+
+### 3. 审计数据接入工作流
+
+![审计数据接入工作流](images/02-data-ingestion.png)
+
+### 4. 审计方法全流程工作流
+
+![审计方法全流程工作流](images/03-method-workflow.png)
