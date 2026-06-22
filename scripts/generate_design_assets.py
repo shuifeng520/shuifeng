@@ -346,8 +346,8 @@ def method_workflow() -> None:
     assistant_bubble(
         c,
         528,
-        ["已生成 SQL 并执行完成，命中 15 条疑点。", "下方是关键 SQL，可继续要求我解释、优化或导出报告。"],
-        h=136,
+        ["SQL 已生成并执行完成，命中 15 条疑点。"],
+        h=100,
     )
     c.rounded((506, 660, 1256, 826), 22, "#f8fbff", "#cfe0f2")
     c.text((540, 694), "SQL 片段", 23, COLORS["text"])
@@ -361,8 +361,7 @@ def method_workflow() -> None:
     c.rounded((540, 758, 1224, 814), 16, "#f3f7fb", "#dce8f5")
     sql = [
         "SELECT 项目名称, 支付摘要, 支付金额",
-        "FROM 年度支付明细表",
-        "WHERE 支付摘要 LIKE '%电梯维护%' AND 单价 > 8800;",
+        "FROM 年度支付明细表 WHERE 单价 > 8800;",
     ]
     for idx, line in enumerate(sql):
         y = 776 + idx * 18
@@ -378,7 +377,6 @@ def method_workflow() -> None:
     x = 1476
     x = chip(c, x, 798, "导出 Excel", 138, True)
     chip(c, x, 798, "打包报告", 138)
-    c.text((1476, 856), "对话确认后保存为可复用审计方法。", 18, COLORS["muted"])
     c.save()
 
 

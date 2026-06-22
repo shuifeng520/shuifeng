@@ -65,10 +65,9 @@
 <text x="1354" y="436" fill="#5e6f88" font-size="16" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">我</text>
 <circle cx="462" cy="564" r="24" fill="#2b7bd8"/>
 <text x="462" y="564" fill="#ffffff" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">AI</text>
-<rect x="506" y="528" width="750" height="136" rx="22" fill="#f9fbfe" stroke="#e2ebf5" stroke-width="1"/>
+<rect x="506" y="528" width="750" height="100" rx="22" fill="#f9fbfe" stroke="#e2ebf5" stroke-width="1"/>
 <text x="540" y="562" fill="#10203b" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">审计智能体</text>
-<text x="540" y="598" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">已生成 SQL 并执行完成，命中 15 条疑点。</text>
-<text x="540" y="628" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">下方是关键 SQL，可继续要求我解释、优化或导出报告。</text>
+<text x="540" y="598" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 已生成并执行完成，命中 15 条疑点。</text>
 <rect x="506" y="660" width="750" height="166" rx="22" fill="#f8fbff" stroke="#cfe0f2" stroke-width="1"/>
 <text x="540" y="694" fill="#10203b" font-size="23" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SQL 片段</text>
 <rect x="860" y="682" width="124" height="42" rx="21" fill="#e9fbf2" stroke="#9ce3bf" stroke-width="1"/>
@@ -82,9 +81,7 @@
 <text x="562" y="776" fill="#7b8aa0" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">1</text>
 <text x="596" y="776" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">SELECT 项目名称, 支付摘要, 支付金额</text>
 <text x="562" y="794" fill="#7b8aa0" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">2</text>
-<text x="596" y="794" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">FROM 年度支付明细表</text>
-<text x="562" y="812" fill="#7b8aa0" font-size="14" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">3</text>
-<text x="596" y="812" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">WHERE 支付摘要 LIKE &#x27;%电梯维护%&#x27; AND 单价 &gt; 8800;</text>
+<text x="596" y="794" fill="#334155" font-size="15" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">FROM 年度支付明细表 WHERE 单价 &gt; 8800;</text>
 <rect x="462" y="834" width="878" height="158" rx="26" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
 <text x="498" y="878" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">继续追问：解释命中原因，导出 Excel，并打包审计报告...</text>
 <circle cx="1288" cy="878" r="30" fill="#2b7bd8"/>
@@ -126,5 +123,4 @@
 <text x="1545" y="819" fill="#155fb4" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">导出 Excel</text>
 <rect x="1628" y="798" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
 <text x="1697" y="819" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">打包报告</text>
-<text x="1476" y="856" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">对话确认后保存为可复用审计方法。</text>
 </svg>
