@@ -346,24 +346,25 @@ def method_workflow() -> None:
         ["已生成 SQL 并执行完成，命中 15 条疑点。", "下方是关键 SQL，可继续要求我解释、优化或导出报告。"],
         h=136,
     )
-    c.rounded((506, 684, 1256, 826), 20, "#f8fbff", COLORS["line"])
-    c.text((540, 718), "SQL 片段", 22, COLORS["text"])
-    c.rounded((990, 704, 1078, 738), 17, COLORS["green"], COLORS["green_line"])
-    c.text((1034, 721), "已展开", 16, COLORS["green_text"], "mm")
-    c.rounded((1090, 704, 1166, 738), 17, COLORS["surface"], COLORS["line"])
-    c.text((1128, 721), "隐藏", 16, COLORS["blue_dark"], "mm")
-    c.rounded((1178, 704, 1230, 738), 17, COLORS["surface"], COLORS["line"])
-    c.text((1204, 721), "复制", 16, COLORS["muted"], "mm")
-    c.rounded((540, 750, 1222, 812), 14, "#f4f8fc", "#e1ebf5")
+    c.rounded((506, 672, 1256, 826), 22, "#f8fbff", "#cfe0f2")
+    c.text((540, 706), "SQL 片段", 23, COLORS["text"])
+    c.text((540, 734), "可隐藏/显示代码，隐藏后仅保留执行摘要。", 17, COLORS["subtle"], max_width=360)
+    c.rounded((860, 694, 984, 736), 21, COLORS["green"], COLORS["green_line"])
+    c.text((922, 715), "代码已显示", 17, COLORS["green_text"], "mm")
+    c.rounded((1000, 694, 1118, 736), 21, COLORS["blue_soft"], "#b9d8ff")
+    c.text((1059, 715), "隐藏代码", 17, COLORS["blue_dark"], "mm")
+    c.rounded((1134, 694, 1224, 736), 21, COLORS["surface"], COLORS["line"])
+    c.text((1179, 715), "复制 SQL", 17, COLORS["muted"], "mm")
+    c.rounded((540, 748, 1224, 814), 16, "#f3f7fb", "#dce8f5")
     sql = [
         "SELECT 项目名称, 支付摘要, 支付金额",
         "FROM 年度支付明细表",
         "WHERE 支付摘要 LIKE '%电梯维护%' AND 单价 > 8800;",
     ]
     for idx, line in enumerate(sql):
-        y = 770 + idx * 18
+        y = 768 + idx * 20
         c.text((562, y), str(idx + 1), 14, COLORS["subtle"], max_width=24)
-        c.text((596, y), line, 15, "#334155", max_width=585)
+        c.text((596, y), line, 16, "#334155", max_width=585)
     input_box(c, "继续追问：解释命中原因，导出 Excel，并打包审计报告...")
 
     side_stat(c, 316, "执行状态", "已完成", "耗时 1.8s", COLORS["green"])
