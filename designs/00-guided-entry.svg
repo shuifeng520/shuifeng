@@ -75,19 +75,29 @@
 <text x="540" y="722" fill="#10203b" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">审计智能体</text>
 <text x="540" y="758" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">好的。我会按“资料识别 -&gt; 数据接入 -&gt; 方法执行 -&gt; 结果归档”推进。</text>
 <text x="540" y="788" fill="#5e6f88" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">你可以上传政策文件，也可以直接描述审计关注点。</text>
-<rect x="462" y="846" width="878" height="138" rx="24" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
-<text x="498" y="882" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">直接输入审计目标，例如：检查采购预算执行率偏低的原因...</text>
-<line x1="498" y1="916" x2="1302" y2="916" stroke="#d8e5f4" stroke-width="1" stroke-linecap="round"/>
-<rect x="498" y="928" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="567" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">上传资料</text>
-<rect x="650" y="928" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="719" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">连接数据</text>
-<rect x="802" y="928" width="186" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="895" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">生成 SQL</text>
-<rect x="1002" y="928" width="138" height="42" rx="21" fill="#f1f5f9" stroke="#d8e5f4" stroke-width="1"/>
-<text x="1071" y="949" fill="#5e6f88" font-size="18" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">导出报告</text>
-<circle cx="1288" cy="910" r="30" fill="#2b7bd8"/>
-<text x="1288" y="910" fill="#ffffff" font-size="28" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">↑</text>
+<rect x="462" y="834" width="878" height="158" rx="26" fill="#ffffff" stroke="#cfe0f2" stroke-width="1" filter="url(#shadow)"/>
+<text x="498" y="878" fill="#7b8aa0" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">直接输入审计目标，例如：检查采购预算执行率偏低的原因...</text>
+<circle cx="1288" cy="878" r="30" fill="#2b7bd8"/>
+<text x="1288" y="878" fill="#ffffff" font-size="28" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">↑</text>
+<line x1="498" y1="914" x2="1302" y2="914" stroke="#d8e5f4" stroke-width="1" stroke-linecap="round"/>
+<rect x="486" y="928" width="746" height="46" rx="18" fill="#fbfdff" stroke="#edf3f9" stroke-width="1"/>
+<text x="510" y="951" fill="#7b8aa0" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">快捷操作</text>
+<rect x="612" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="634" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="634" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">文</text>
+<text x="656" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">上传资料</text>
+<rect x="756" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="778" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="778" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">数</text>
+<text x="800" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">连接数据</text>
+<rect x="900" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="922" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="922" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">S</text>
+<text x="944" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">生成 SQL</text>
+<rect x="1044" y="932" width="132" height="38" rx="19" fill="#f7fbff" stroke="#e1ebf5" stroke-width="1"/>
+<circle cx="1066" cy="951" r="12" fill="#eef6ff" stroke="#cfe0f2" stroke-width="1"/>
+<text x="1066" y="951" fill="#155fb4" font-size="13" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">报</text>
+<text x="1088" y="951" fill="#5e6f88" font-size="17" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">导出报告</text>
 <rect x="1444" y="316" width="432" height="104" rx="20" fill="#eef6ff" stroke="#d8e5f4" stroke-width="1"/>
 <text x="1476" y="352" fill="#10203b" font-size="22" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">当前任务</text>
 <text x="1476" y="388" fill="#155fb4" font-size="20" font-family="WenQuanYi Micro Hei, Noto Sans CJK SC, Microsoft YaHei, Arial, sans-serif" text-anchor="start" dominant-baseline="auto">部门预算执行审计</text>

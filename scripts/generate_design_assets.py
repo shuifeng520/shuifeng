@@ -168,6 +168,14 @@ def chip(c: Canvas, x: int, y: int, label: str, w: int | None = None, active: bo
     return x + w + 14
 
 
+def action_chip(c: Canvas, x: int, y: int, label: str, icon: str, w: int = 132) -> int:
+    c.rounded((x, y, x + w, y + 38), 19, "#f7fbff", "#e1ebf5")
+    c.circle(x + 22, y + 19, 12, COLORS["blue_soft"], "#cfe0f2")
+    c.text((x + 22, y + 19), icon, 13, COLORS["blue_dark"], "mm")
+    c.text((x + 44, y + 19), label, 17, COLORS["muted"], "lm")
+    return x + w + 12
+
+
 def icon_button(c: Canvas, x: int, y: int, label: str) -> None:
     c.rounded((x, y, x + 140, y + 48), 16, COLORS["surface"], COLORS["line"])
     c.text((x + 70, y + 24), label, 18, COLORS["blue_dark"], "mm")
@@ -230,14 +238,17 @@ def user_bubble(c: Canvas, y: int, lines: list[str], h: int = 92) -> None:
 
 
 def input_box(c: Canvas, placeholder: str = "输入审计问题，或拖拽政策、Excel、CSV 到这里...") -> None:
-    c.rounded((462, 846, 1340, 984), 24, COLORS["surface"], "#cfe0f2", shadow=True)
-    c.text((498, 882), placeholder, 22, COLORS["subtle"], max_width=690)
-    c.line((498, 916, 1302, 916), COLORS["line"], 1)
-    x = 498
-    for label in ["上传资料", "连接数据", "生成 SQL", "导出报告"]:
-        x = chip(c, x, 928, label)
-    c.circle(1288, 910, 30, COLORS["blue"])
-    c.text((1288, 910), "↑", 28, COLORS["white"], "mm")
+    c.rounded((462, 834, 1340, 992), 26, COLORS["surface"], "#cfe0f2", shadow=True)
+    c.text((498, 878), placeholder, 22, COLORS["subtle"], max_width=690)
+    c.circle(1288, 878, 30, COLORS["blue"])
+    c.text((1288, 878), "↑", 28, COLORS["white"], "mm")
+    c.line((498, 914, 1302, 914), COLORS["line"], 1)
+    c.rounded((486, 928, 1232, 974), 18, "#fbfdff", "#edf3f9")
+    c.text((510, 951), "快捷操作", 17, COLORS["subtle"], "lm")
+    x = 612
+    actions = [("上传资料", "文"), ("连接数据", "数"), ("生成 SQL", "S"), ("导出报告", "报")]
+    for label, icon in actions:
+        x = action_chip(c, x, 932, label, icon)
 
 
 def side_stat(c: Canvas, y: int, title: str, value: str, desc: str, color: str = COLORS["blue_soft"]) -> None:
