@@ -346,7 +346,7 @@ def method_workflow() -> None:
         ["已生成 SQL 并执行完成，命中 15 条疑点。", "下方是关键 SQL，可继续要求我解释、优化或导出报告。"],
         h=136,
     )
-    c.rounded((506, 672, 1256, 826), 22, "#f8fbff", "#cfe0f2")
+    c.rounded((506, 672, 1256, 830), 22, "#f8fbff", "#cfe0f2")
     c.text((540, 706), "SQL 片段", 23, COLORS["text"])
     c.text((540, 734), "可隐藏/显示代码，隐藏后仅保留执行摘要。", 17, COLORS["subtle"], max_width=360)
     c.rounded((860, 694, 984, 736), 21, COLORS["green"], COLORS["green_line"])
@@ -355,16 +355,25 @@ def method_workflow() -> None:
     c.text((1059, 715), "隐藏代码", 17, COLORS["blue_dark"], "mm")
     c.rounded((1134, 694, 1224, 736), 21, COLORS["surface"], COLORS["line"])
     c.text((1179, 715), "复制 SQL", 17, COLORS["muted"], "mm")
-    c.rounded((540, 748, 1224, 814), 16, "#f3f7fb", "#dce8f5")
-    sql = [
-        "SELECT 项目名称, 支付摘要, 支付金额",
-        "FROM 年度支付明细表",
-        "WHERE 支付摘要 LIKE '%电梯维护%' AND 单价 > 8800;",
-    ]
-    for idx, line in enumerate(sql):
-        y = 768 + idx * 20
-        c.text((562, y), str(idx + 1), 14, COLORS["subtle"], max_width=24)
-        c.text((596, y), line, 16, "#334155", max_width=585)
+    c.rounded((540, 748, 1224, 820), 16, "#0f172a", "#23314a")
+    c.rounded((540, 748, 1224, 776), 16, "#16233a", "#23314a")
+    c.line((540, 776, 1224, 776), "#243650", 1)
+    c.text((562, 765), "SQL Query", 14, "#9ec5ff")
+    c.rounded((1126, 754, 1212, 772), 9, "#1f2d45", "#334765")
+    c.text((1169, 763), "MYSQL", 12, "#9fb6d4", "mm")
+    c.rounded((548, 780, 586, 814), 10, "#111b2d")
+    sql_y = [792, 805, 818]
+    for idx, y in enumerate(sql_y):
+        c.text((566, y), str(idx + 1), 13, "#7f97b9", "mm")
+    c.text((596, 792), "SELECT", 15, "#7dd3fc")
+    c.text((664, 792), "项目名称, 支付摘要, 支付金额", 15, "#dce9ff", max_width=538)
+    c.text((596, 805), "FROM", 15, "#7dd3fc")
+    c.text((648, 805), "年度支付明细表", 15, "#dce9ff", max_width=554)
+    c.text((596, 818), "WHERE", 15, "#7dd3fc")
+    c.text((664, 818), "支付摘要 LIKE", 15, "#dce9ff")
+    c.text((784, 818), "'%电梯维护%'", 15, "#facc15")
+    c.text((904, 818), "AND 单价 >", 15, "#dce9ff")
+    c.text((1002, 818), "8800;", 15, "#86efac")
     input_box(c, "继续追问：解释命中原因，导出 Excel，并打包审计报告...")
 
     side_stat(c, 316, "执行状态", "已完成", "耗时 1.8s", COLORS["green"])
